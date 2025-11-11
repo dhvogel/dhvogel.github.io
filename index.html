@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dan Vogel - Software Engineer | Personal Portfolio and Blog">
+    <title>Dan Vogel - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Dan Vogel</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Dan Vogel</span></h1>
+                <p class="hero-subtitle">Software Engineer passionate about building and writing</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">My Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm Dan Vogel, an ex-Google software engineer who has bicycled across the United States and Europe. Recently, I graduated from the Yale School of Management, where I joined a GovTech startup in the Yale Accelerator, wrote prolifically, and studied under Yale Law School's leading Feminist and Critical Race theorists.
+                    </p>
+                    <p>
+                        I enjoy the process of learning, and I enjoy challenging myself because I feel that this enables me to learn. I like being in tech because there is always something new, it's fast-paced and high-stakes, and it makes me feel alive.
+                    </p>
+                    <p>
+                        Outside of work I enjoy leading my book club, being outside, and figuring out new songs on the guitar. I am always open to new projects that allow me to grow both as an engineer and as a person.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Serverless</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of projects I've built to solve real-world problems</p>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded from projects.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <p class="section-subtitle">Thoughts, learnings, and insights from my journey in software engineering</p>
+            
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically loaded from blog/blog.json -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="blog/index.html" class="btn btn-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                I'm always open to discussing new opportunities, interesting projects, or just having a conversation 
+                about software engineering. Let's connect!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:dan.vogel@yale.edu">dan.vogel@yale.edu</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong>
+                        <a href="https://linkedin.com/in/danvogel" target="_blank">linkedin.com/in/danvogel</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/dhvogel" target="_blank">github.com/dhvogel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dan Vogel. Built with passion and attention to detail.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
+

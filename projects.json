@@ -1,0 +1,13 @@
+[
+    {
+        "title": "BookClurb",
+        "description": "BookClurb is an open-source platform for managing book clubs.",
+        "image": "images/bookclurb.png",
+        "technologies": ["React", "Go", "Firebase", "Cloud Run"],
+        "links": {
+            "demo": "https://bookclurb.net",
+            "github": "https://github.com/dhvogel/bookclurb"
+        }
+    }
+]
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dan Vogel's Blog - Thoughts, learnings, and insights">
+    <title>Blog - Dan Vogel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Dan Vogel</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Listing Section -->
+    <section class="blog-listing" style="padding-top: 100px;">
+        <div class="container">
+            <h1 class="section-title" style="text-align: left; margin-bottom: 3rem;">Blog</h1>
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically loaded from blog.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dan Vogel. Built with passion and attention to detail.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Load and render blog posts listing
+        async function loadBlogListing() {
+            const blogGrid = document.getElementById('blog-grid');
+            if (!blogGrid) return;
+            
+            try {
+                const response = await fetch('blog.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const posts = await response.json();
+                
+                if (!Array.isArray(posts)) {
+                    throw new Error('blog.json does not contain an array');
+                }
+                
+                blogGrid.innerHTML = '';
+                
+                posts.forEach((post, index) => {
+                    // Create blog card
+                    const card = document.createElement('article');
+                    card.className = 'blog-card';
+                    
+                    // Date
+                    const date = document.createElement('div');
+                    date.className = 'blog-date';
+                    date.textContent = post.date;
+                    card.appendChild(date);
+                    
+                    // Title
+                    const title = document.createElement('h3');
+                    title.className = 'blog-title';
+                    const titleLink = document.createElement('a');
+                    titleLink.href = `blog-${index + 1}.html`;
+                    titleLink.textContent = post.title;
+                    title.appendChild(titleLink);
+                    card.appendChild(title);
+                    
+                    // Excerpt
+                    const excerpt = document.createElement('p');
+                    excerpt.className = 'blog-excerpt';
+                    excerpt.textContent = post.excerpt;
+                    card.appendChild(excerpt);
+                    
+                    // Read More link
+                    const readMore = document.createElement('a');
+                    readMore.href = `blog-${index + 1}.html`;
+                    readMore.className = 'blog-read-more';
+                    readMore.textContent = 'Read More →';
+                    card.appendChild(readMore);
+                    
+                    blogGrid.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading blog posts:', error);
+                blogGrid.innerHTML = `<p style="color: var(--text-secondary);">Unable to load blog posts. ${error.message}</p>`;
+            }
+        }
+
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Load blog listing when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadBlogListing);
+        } else {
+            loadBlogListing();
+        }
+    </script>
+</body>
+</html>
+
