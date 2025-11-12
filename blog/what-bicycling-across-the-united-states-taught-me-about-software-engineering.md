@@ -2,7 +2,7 @@
 
 *November 11, 2025*
 
-The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. Having just turned 30, I felt that for a journey like this, it was either now or never. I learned a lot over the course of this trip, about myself and the world around me, and some of it is applicable to software engineering, both as a practice and as an application in a corporate environment. This post shares some of this learning.
+The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. Having just turned 30, I felt that for a journey like this, it was either now or never. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering. This post shares some of this learning.
 
 <div style="display: flex; gap: 1rem; margin: 2rem 0; align-items: flex-start;">
   <div style="flex: 1;">
