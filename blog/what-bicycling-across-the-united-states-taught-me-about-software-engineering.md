@@ -29,7 +29,7 @@ In the world of software, it is not always the case that you can see progress on
 
 Some days I would pull up the map, maybe in Michigan, or in Montana and I'd say to myself, "Wow, I can't believe I biked all that." And I'd recognize how far I'd come. It turned out that aside from my parents and close friends, no one was really following the trip. I wasn't a celeb. And most people I passed on the road had no idea I had started several thousand miles to the east.
 
-The thing about working at Google is that everyone you work with, they work at Google too. While I may have been "Dan who works at Google" to folks outside of work, while I was at work, I was just "Dan". And it was up to me to make a name for myself on my own merits. Up to me to be in charge of my own journey, like while I was biking.
+The thing about working at Google is that everyone you work with, they work at Google too. While I may have been "Dan who works at Google" to some outside of work, while I was at work, I was just "Dan". And it was up to me to make a name for myself on my own merits. Up to me to be in charge of my own journey, like while I was biking.
 
 Actually, Google **does** provide a map to its employees to follow. It's called the promotion ladder. Criteria that each employee must fulfill in order to get to the next level in the organization. And this map, it was followed far more closely than I would have expected before I joined the company.
 
