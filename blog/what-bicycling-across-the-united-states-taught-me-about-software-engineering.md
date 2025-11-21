@@ -25,7 +25,7 @@ This giant bike ride across the United States was just 74 days of a little bit a
 
 Many large and ambitious projects are like this. One day at a time of just getting a little bit better, a little bit closer to the goal. Maybe some days are large jumps, and some days are small. But every day, a little closer.
 
-In the world of software, it is not always the case that you can see progress on a map. In some cases, it is up to you to create the map. And the way that progress on the map is marked can be not so obvious either. Especially when software systems aren't really visible, while the inputs and outputs to these systems may be, these systems are really just a shared visualization.
+In the world of software, it is not always the case that you can see progress on a map. In some cases, it is up to you to create the map. And the way that progress on the map is marked can be not so obvious either. Especially when software systems aren't really visible, while the inputs and outputs to these systems may be, I find that talking about these systems can be like talking about a shared visualization in our heads.
 
 Some days I would pull up the map, maybe in Michigan, or in Montana and I'd say to myself, "Wow, I can't believe I biked all that." And I'd recognize how far I'd come. It turned out that aside from my parents and close friends, no one was really following the trip. I wasn't a celeb. And most people I passed on the road had no idea I had started several thousand miles to the east.
 
