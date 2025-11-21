@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dan Vogel's Blog - Thoughts, learnings, and insights">
     <title>Blog - Dan Vogel</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHB7R2WKSF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PHB7R2WKSF');
+    </script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +79,7 @@
                 
                 blogGrid.innerHTML = '';
                 
-                posts.forEach((post, index) => {
+                posts.forEach((post) => {
                     // Create blog card
                     const card = document.createElement('article');
                     card.className = 'blog-card';
@@ -86,7 +94,7 @@
                     const title = document.createElement('h3');
                     title.className = 'blog-title';
                     const titleLink = document.createElement('a');
-                    titleLink.href = `blog-${index + 1}.html`;
+                    titleLink.href = `${post.slug}.html`;
                     titleLink.textContent = post.title;
                     title.appendChild(titleLink);
                     card.appendChild(title);
@@ -99,7 +107,7 @@
                     
                     // Read More link
                     const readMore = document.createElement('a');
-                    readMore.href = `blog-${index + 1}.html`;
+                    readMore.href = `${post.slug}.html`;
                     readMore.className = 'blog-read-more';
                     readMore.textContent = 'Read More →';
                     card.appendChild(readMore);

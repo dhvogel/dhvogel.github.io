@@ -169,7 +169,7 @@ async function loadBlogPreviews() {
         
         blogGrid.innerHTML = '';
         
-        previewPosts.forEach((post, index) => {
+        previewPosts.forEach((post) => {
             // Create blog card
             const card = document.createElement('article');
             card.className = 'blog-card';
@@ -184,7 +184,7 @@ async function loadBlogPreviews() {
             const title = document.createElement('h3');
             title.className = 'blog-title';
             const titleLink = document.createElement('a');
-            titleLink.href = `/blog/blog-${index + 1}.html`;
+            titleLink.href = `/blog/${post.slug}.html`;
             titleLink.textContent = post.title;
             title.appendChild(titleLink);
             card.appendChild(title);
@@ -197,7 +197,7 @@ async function loadBlogPreviews() {
             
             // Read More link
             const readMore = document.createElement('a');
-            readMore.href = `/blog/blog-${index + 1}.html`;
+            readMore.href = `/blog/${post.slug}.html`;
             readMore.className = 'blog-read-more';
             readMore.textContent = 'Read More →';
             card.appendChild(readMore);

@@ -25,8 +25,20 @@ This giant bike ride across the United States was just 74 days of a little bit a
 
 Many large and ambitious projects are like this. One day at a time of just getting a little bit better, a little bit closer to the goal. Maybe some days are large jumps, and some days are small. But every day, a little closer.
 
-On my trip, I could see my progress on a map. This is not always the case in the world of software. In some cases, it is up to you to create the map. And the way that progress on the map is marked can be not so obvious either.
+But in the world of software, it is not always the case that you can see progress on a map. In some cases, it is up to you to create the map. And the way that progress on the map is marked can be not so obvious either. Especially when software systems aren't really visible, while the inputs and outputs to these systems may be, these systems are really just a shared visualization.
 
 Some days I would pull up the map, maybe in Michigan, or in Montana and I'd say to myself, "Wow, I can't believe I biked all that." And I'd recognize how far I'd come. It turned out that aside from my parents and close friends, no one was really following the trip. I wasn't a celeb. And most people I passed on the road had no idea I had started several thousand miles to the east.
 
-In my time in the corporate world, I found that when I did a good job, it was not always the case that somebody patted me on the back and told me so. There was not always the capacity for recognizing the small wins and progress. So it became important for me to recognize and celebrate my own wins, to provide that incentive to attain the bigger goals, and provide a window for reflection. 
+The thing about working at Google is that everyone you work with, they work at Google too. While I may have been "Dan who works at Google" to folks outside of work, while I was at work, I was just "Dan". And it was up to me to make a name for myself on my own merits. Up to me to be in charge of my own journey, like while I was biking.
+
+Actually, Google **does** provide a map to its employees to follow. It's called the promotion ladder. Criteria that each employee must fulfill in order to get to the next level in the organization. And this map, it was followed far more closely than I would have expected before I joined the company.
+
+But while this map provides general guidance that is measured over six month checkpoints, it was really up to me to create the map that I followed every day. What projects did I want to work on? What bets did I want to make? And while the questions were different in nature than being on the bike (Where can I camp? How much food should I carry?), the ethos is the same: questions that help me learn a little more about myself and the world around me.
+
+<!-- ## The importance of asking for help
+
+By nature, I am an independent person. I think part of me enjoys the challenge of confronting a problem, so much so that I do not want to avoid the challenge by raising my hand. But sometimes, asking for help is the right thing to do.
+
+There were times on this bicycling journey that I had no choice but to ask for help. I stayed in the homes of a few friends, and many kind strangers that I found through [Warmshowers](https://warmshowers.org). Folks at campsites invited me over to have a hot coffee or a cold beer. The owner of a hotel gave me a personal tour of her small town, Medina, North Dakota, population about a hundred.
+
+In the world of software engineering, nothing ever gets done alone. At Google, teams of people would build the software, separate teams  -->
