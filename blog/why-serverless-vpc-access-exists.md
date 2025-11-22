@@ -28,7 +28,7 @@ Note that the infrastructure in the VPC ("<2>") is a NAT that makes it look like
 
 One quirk of this setup is that the customer provisions a "connector", where a "connector" is really a set of resources that includes a managed instance group running a NAT in the VPC. This underlying infrastructure is hidden from the customer in a really hacky way (a regex for a special instance name prefix in the front end) because of decisions that happened before I joined the team, and this design decision made it really frustrating for the customer to debug when the connector broke. The customer, for example, couldn't see that CPU utilization of underlying compute was maxxed out because they couldn't see the underlying compute instances. I think this design choice greatly increased the support load on the team and contributed to the frequent team turnover. But to be fair, exposing the infrastructure could have had all sorts of burdens as well. 
 
-## THe next generation connector
+## The next generation connector
 
 Another part of the organization recently released Direct VPC Egress, which I believe uses some new GCE Networking functionality to obviate the need for the Connector (but not the need for the Private IP addresses). I wasn't involved in that effort so I don't know the new architecture. But if I had to guess, I think it would look something like this:
 
@@ -38,3 +38,9 @@ Another part of the organization recently released Direct VPC Egress, which I be
 </div>
 
 A couple reddit posts say it works pretty well. Good job team!
+
+## Reflecting on my time on VPC Access
+
+This was certainly the most challenging team in the Serverless organization to be on, and I think this is part of the reason that I was selected for it. I made it clear that I wanted to have impact early on. And they gave me the opportunity to do so as my first project was to write the control plane for VPC Access for Cloud Run, which I now realize was a massive contribution for an L3. In addition, I was also willing to staff the 24/7 oncalls, I later found that most other Serverless components had SRE teams that took the pager at night, but not VPC Access. We just had our own grit and can-do attitudes.
+
+But this was a great project to work on when I did. I felt that I learned tremendously from this experience, in many different dimensions. I learned how to work under pressure, I learned how to write code that is at or above the Google quality bar, I learned how to prioritize work, how to manage relationships. I am very grateful for this experience and part of this blog post is to try to convey that to whoever is reading.
