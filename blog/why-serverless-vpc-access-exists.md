@@ -39,8 +39,8 @@ Another part of the organization recently released Direct VPC Egress, which I be
 
 A couple reddit posts say it works pretty well. Good job team!
 
-<!-- ## Reflecting on my time on VPC Access
+## Conclusion
 
-This was certainly the most challenging team in the Serverless organization to be on, and I think this is part of the reason that I was selected for it. I made it clear that I wanted to have impact early on. And they gave me the opportunity to do so as my first project was to write the control plane for VPC Access for Cloud Run, which I now realize was a massive contribution for an L3. In addition, I was also willing to staff the 24/7 oncalls, I later found that most other Serverless components had SRE teams that took the pager at night, but not VPC Access. We just had our own grit and can-do attitudes.
+VPC Access was important enough to the Serverless organization to staff two full teams on it. One team managing the legacy path which included me, and one team creating the latest and greatest direct VPC egress, which included some of the thought leaders in the organization. 
 
-But this was a great project to work on when I did. I felt that I learned tremendously from this experience, in many different dimensions. I learned how to work under pressure, I learned how to write code that is at or above the Google quality bar, I learned how to prioritize work, how to manage relationships. I am very grateful for this experience and part of this blog post is to try to convey that to whoever is reading. -->
+One reason for this could be that Google Cloud doesn't make the big money on Cloud Run, they make the big money on what Cloud Run *connects to*. Compute is just a thinner margin business than storage. To illustrate this, there are several different flavors of compute that Google offers including Cloud Run, GKE, Kubernetes. It was not uncommon to see one customer ramp up spend on Cloud Run until they put together a small ops team to manage a GKE setup. There's also compute from different cloud providers. A rough [public estimate](https://blog.vonng.com/en/cloud/profit) says margins of 15% for compute and 50% for storage. VPC Access is about making it easier for the customer to use other GCP Services that had bigger "moats" (e.g. difficulty to do database migration), which for GCP was where the real money was at.
