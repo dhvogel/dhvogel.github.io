@@ -4,7 +4,7 @@ When I joined the GCP Serverless engineering team in October of 2019, I was assi
 
 ## Before Serverless VPC Access Connectors
 
-Serverless VPC Access Connectors allow you to call a public Cloud Run service, have that service connect to private data, while keeping all packets within Google's network. Prior to VPC Access, you had a Cloud Run service, you had a CloudSQL or similar database in the VPC, and in order to get the Cloud Run Service to access the database, you had to expose the database publicly and then tell Cloud Run to access it like any other public endpoint.
+Serverless VPC Access Connectors allow you to call a public Cloud Run service and have that service connect to private data, while keeping all packets within Google's network. Prior to VPC Access, you had a Cloud Run service, you had a CloudSQL or similar database in the VPC, and in order to get the Cloud Run Service to access the database, you had to expose the database publicly and then tell Cloud Run to access it like any other public endpoint.
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
   <img src="../images/pre-vpcaccess.png" alt="Cloud Run accessing CloudSQL before VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
