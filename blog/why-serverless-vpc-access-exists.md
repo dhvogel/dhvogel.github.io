@@ -33,7 +33,7 @@ One quirk of this setup is that the customer provisions a "connector", where a "
 Another part of the organization recently released Direct VPC Egress, which I believe uses some new GCE Networking functionality to obviate the need for the Connector (but not the need for the Private IP addresses). I wasn't involved in that effort so I don't know the new architecture. But if I had to guess, I think it would look something like this:
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/vpcaccess.png" alt="Cloud Run accessing CloudSQL post VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+  <img src="../images/post-vpcaccess.png" alt="Cloud Run accessing CloudSQL post VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Post VPC Access Connectors</p>
 </div>
 
