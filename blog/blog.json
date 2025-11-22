@@ -10,7 +10,7 @@
         "slug": "why-serverless-vpc-access-exists",
         "title": "Why Serverless VPC Access exists",
         "date": "November 21, 2025",
-        "excerpt": "These are some learnings from working on Serverless VPC Access.",
+        "excerpt": "Understanding the purpose and architecture of Google Cloud Platform's Serverless VPC Access connector.",
         "file": "why-serverless-vpc-access-exists.md"
     }
 ]
