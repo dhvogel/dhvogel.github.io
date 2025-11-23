@@ -41,6 +41,6 @@ A couple reddit posts say it works pretty well. Good job team!
 
 ## Conclusion
 
-VPC Access was important enough to the Serverless organization to staff two teams on it: One team managing the legacy path, and one team creating the latest and greatest direct VPC egress. 
+VPC Access was important enough to the Serverless organization to staff two teams on it: One team managing the legacy path, and one team creating the latest direct VPC egress. 
 
 One reason for this high level of investment could be that Google Cloud doesn't make the big money on Cloud Run, they make the big money on what Cloud Run *connects to*. Compute is just a thinner margin business than storage. A rough [public estimate](https://blog.vonng.com/en/cloud/profit) says margins of 15% for compute and 50% for storage. To illustrate this, there are several different flavors of compute that Google offers including Cloud Run, GKE, Kubernetes, and it was not uncommon to see one customer ramp up spend on Cloud Run until they put together a small ops team to manage a GKE setup. Then there's different cloud providers which become even easier to switch to if your database is publicly exposed. VPC Access is about making it easier for the customer to use Cloud Run with other GCP Services, to make Cloud Run easy to use that the customer does not need to experiment with potentially cheaper compute elsewhere.
