@@ -13,7 +13,7 @@ Serverless VPC Access Connectors allow you to call a public Cloud Run service an
 
 Of course, Google added some special protections for this kind of connection, e.g. [Authorized Networks](https://docs.cloud.google.com/sql/docs/mysql/authorize-networks), but in general companies didn't like exposing their database to the public internet, because this new attack vector could violate policy around security posture, either internal or external (e.g. HIPAA/PCI).
 
-So this part of the system, while relatively small, was hugely important to the Serverless organization, because it supported workloads specifically for the largest customers who had the most sensitive data. This was an example of something that I did not know from the start.
+So this part of the system, while relatively small, was hugely important to the Serverless organization, because it supported workloads specifically for the largest customers who had the most sensitive data.
 
 ## VPC Access Part I
 
