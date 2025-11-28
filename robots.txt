@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow draft blog posts (they're filtered in production anyway, but good to be explicit)
+Disallow: /blog/sunsetting-google-plus.html
+
+# Sitemap location
+Sitemap: https://dhvogel.com/sitemap.xml
+

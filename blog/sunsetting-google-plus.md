@@ -16,7 +16,7 @@ In addition, there were cultural aspects of this experience that looking back we
 Creators loved Google Plus. These could be photographers, poets, potters, painters, anyone who's creation could be shared over the web. Google+ was an [asymmetric](https://www.seobythesea.com/2011/08/googles-asymmetric-social-network-and-plus-authoring-patent) social network, which meant that one could just follow people without them having to accept a friend request. While this pattern is common today (twitter, facebook pages, etc), it wasn't at the time, and creators found their following could grow much quicker, broader, and more diverse on Google Plus than with Facebook's symmetric model.
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/asymmetric-symmetric.png" alt="Google+ sunsetting" style="max-width: 70%; height: auto; border: 1px solid #ddd;">
+  <img src="../images/asymmetric-symmetric.png" alt="Diagram comparing asymmetric vs symmetric social network models" style="max-width: 70%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Asymmetric vs Symmetric Social Network</p>
 </div>
 

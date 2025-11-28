@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dan Vogel - Software Engineer | Personal Portfolio and Blog">
-    <title>Dan Vogel - Software Engineer</title>
+    <meta name="description" content="Dan Vogel - Ex-Google Software Engineer and Yale SOM Graduate. Portfolio showcasing software engineering projects, blog posts about tech, and insights from building products at scale.">
+    <meta name="keywords" content="Dan Vogel, software engineer, Google, Yale, portfolio, blog, Go, Java, Python, JavaScript, React, Google Cloud, serverless">
+    <meta name="author" content="Dan Vogel">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhvogel.com/">
+    <meta property="og:title" content="Dan Vogel - Software Engineer">
+    <meta property="og:description" content="Ex-Google Software Engineer and Yale SOM Graduate. Portfolio showcasing software engineering projects, blog posts about tech, and insights from building products at scale.">
+    <meta property="og:site_name" content="Dan Vogel">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dhvogel.com/">
+    <meta name="twitter:title" content="Dan Vogel - Software Engineer">
+    <meta name="twitter:description" content="Ex-Google Software Engineer and Yale SOM Graduate. Portfolio showcasing software engineering projects, blog posts about tech, and insights from building products at scale.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dhvogel.com/">
+    
+    <title>Dan Vogel - Software Engineer | Portfolio & Blog</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
     <!-- Google Analytics -->
@@ -20,6 +40,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Structured Data - Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dan Vogel",
+        "url": "https://dhvogel.com",
+        "sameAs": [
+            "https://linkedin.com/in/dhvogel",
+            "https://github.com/dhvogel"
+        ],
+        "jobTitle": "Software Engineer",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Yale School of Management"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Google",
+            "jobTitle": "Software Engineer"
+        },
+        "description": "Ex-Google software engineer and Yale SOM graduate passionate about building and writing."
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -133,15 +178,15 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>Email:</strong>
-                        <a href="mailto:dan.vogel@yale.edu">dan.vogel@yale.edu</a>
+                        <a href="mailto:dan.vogel@yale.edu" rel="author">dan.vogel@yale.edu</a>
                     </div>
                     <div class="contact-item">
                         <strong>LinkedIn:</strong>
-                        <a href="https://linkedin.com/in/danvogel" target="_blank">linkedin.com/in/dhvogel</a>
+                        <a href="https://linkedin.com/in/dhvogel" target="_blank" rel="me noopener noreferrer">linkedin.com/in/dhvogel</a>
                     </div>
                     <div class="contact-item">
                         <strong>GitHub:</strong>
-                        <a href="https://github.com/dhvogel" target="_blank">github.com/dhvogel</a>
+                        <a href="https://github.com/dhvogel" target="_blank" rel="me noopener noreferrer">github.com/dhvogel</a>
                     </div>
                 </div>
             </div>
