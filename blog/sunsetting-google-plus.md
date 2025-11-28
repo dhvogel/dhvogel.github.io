@@ -5,9 +5,9 @@
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset, courtesy Nano Banana</p>
 </div>
 
-I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and then he attached a link to a news article, "Google Shutting Down Google+". I texted back, "No". So began my year helping to shut down Google+.
+I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and then he sent a link to a news article, "Google Shutting Down Google+". I texted back, "No". So began my year helping to shut down Google+.
 
-There ended up being some interesting problems to solve during this year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their product. And it required creating a plan ourselves, for example which API should return which code at which time, and sticking to this plan to give a predictable schedule of changes. 
+There ended up being some interesting problems to solve during this year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their product. And it required creating a plan ourselves, for example which API should return which code at which time, and sticking to this plan to give a schedule of changes others could plan around. 
 
 In addition, there were cultural aspects of this experience that looking back were unique. It's been the only time in my career where the main focus of the team was not on the sunrise of something new, but rather the sunset of what was. 
 
@@ -16,7 +16,7 @@ In addition, there were cultural aspects of this experience that looking back we
 Creators loved Google Plus. These could be photographers, poets, potters, painters, anyone who's creation could be shared over the web. Google+ was an [asymmetric](https://www.seobythesea.com/2011/08/googles-asymmetric-social-network-and-plus-authoring-patent) social network, which meant that one could just follow people without them having to accept a friend request. While this pattern is common today (twitter, facebook pages, etc), it wasn't at the time, and creators found their following could grow much quicker, broader, and more diverse on Google Plus than with Facebook's symmetric model.
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/asymmetric-symmetric.png" alt="Diagram comparing asymmetric vs symmetric social network models" style="max-width: 70%; height: auto; border: 1px solid #ddd;">
+  <img src="../images/asymmetric-symmetric.png" alt="Diagram comparing asymmetric vs symmetric social network models" style="max-width: 50%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Asymmetric vs Symmetric Social Network</p>
 </div>
 
