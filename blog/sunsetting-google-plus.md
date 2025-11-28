@@ -7,7 +7,7 @@
 
 I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and then he sent a link to a news article, "Google Shutting Down Google+". I texted back, "No". So began my year helping to shut down Google+.
 
-There ended up being some interesting problems to solve during this year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their product. And it required creating a plan ourselves, for example which API should return which code at which time, and sticking to this plan to give a schedule of changes others could plan around. 
+There ended up being some interesting problems to solve during this year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their product. And it required creating and sticking to our own plan, a deprecation schedule so client teams had something they could plan around. 
 
 In addition, there were cultural aspects of this experience that looking back were unique. It's been the only time in my career where the main focus of the team was not on the sunrise of something new, but rather the sunset of what was. 
 
@@ -30,4 +30,6 @@ This team was what I consider to be my experience of the "old Google". It was no
 
 ## Google took care of the team
 
-Google was very lenient on the team in terms of giving us time to find a new role. By the time the project concluded, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had hoped to be. I was suprised that not everyone felt like this. But I was young and ambitious and I thought that everyone thought how I thought. I just felt like I had to go prove myself, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
+Google was very lenient on the team in terms of giving us time to find a new role. By the time the project concluded, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had joined the company to be. I was suprised that not everyone felt like this. But I was young and ambitious and I thought that everyone thought how I thought. I just had to go build something, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
+
+Google and Google+ are trademarks of Google LLC. All opinions are my own.
