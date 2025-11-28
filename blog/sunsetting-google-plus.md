@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
   <img src="../images/gplus-sunset.png" alt="Google+ sunsetting" style="max-width: 40%; height: auto; border: 1px solid #ddd;">
-  <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset, courtesy Nano Banana</p>
+  <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset</p>
 </div>
 
 I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and then he sent a link to a news article, "Google Shutting Down Google+". I texted back, "No". So began my year helping to shut down Google+.
