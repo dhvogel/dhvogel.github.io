@@ -61,6 +61,17 @@
 
     <script src="../script.js"></script>
     <script>
+        // Check if running locally vs production
+        function isLocalEnvironment() {
+            const hostname = window.location.hostname;
+            const protocol = window.location.protocol;
+            // Check for localhost, 127.0.0.1, or file:// protocol
+            return hostname === 'localhost' || 
+                   hostname === '127.0.0.1' || 
+                   hostname === '' ||
+                   protocol === 'file:';
+        }
+
         // Load and render blog posts listing
         async function loadBlogListing() {
             const blogGrid = document.getElementById('blog-grid');
@@ -79,9 +90,14 @@
                     throw new Error('blog.json does not contain an array');
                 }
                 
+                // Filter out draft posts only in production
+                const publishedPosts = isLocalEnvironment() 
+                    ? posts 
+                    : posts.filter(post => !post.draft);
+                
                 blogGrid.innerHTML = '';
                 
-                posts.forEach((post) => {
+                publishedPosts.forEach((post) => {
                     // Create blog card
                     const card = document.createElement('article');
                     card.className = 'blog-card';

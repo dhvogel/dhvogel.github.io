@@ -1,17 +1,25 @@
 [
     {
-        "slug": "what-bicycling-across-the-united-states-taught-me-about-software-engineering",
-        "title": "What bicycling across the United States taught me about software engineering",
-        "date": "November 11, 2025",
-        "excerpt": "The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. Having just turned 30, I felt that for a journey like this, it was either now or never. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering. This post shares some of this learning.",
-        "file": "what-bicycling-across-the-united-states-taught-me-about-software-engineering.md"
+        "slug": "sunsetting-google-plus",
+        "title": "Sunsetting Google Plus",
+        "date": "November 26, 2025",
+        "excerpt": "Anecdotes from the year I spent helping to turn down Google+.",
+        "file": "sunsetting-google-plus.md",
+        "draft": true
     },
     {
         "slug": "why-serverless-vpc-access-exists",
         "title": "Why Serverless VPC Access exists",
         "date": "November 21, 2025",
-        "excerpt": "Understanding the purpose and architecture of Google Cloud Platform's Serverless VPC Access connector.",
+        "excerpt": "Looking at the story behind Google Cloud Platform's Serverless VPC Access product.",
         "file": "why-serverless-vpc-access-exists.md"
+    },
+    {
+        "slug": "what-bicycling-across-the-united-states-taught-me-about-software-engineering",
+        "title": "What bicycling across the United States taught me about software engineering",
+        "date": "November 11, 2025",
+        "excerpt": "The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. Having just turned 30, I felt that for a journey like this, it was either now or never. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering. This post shares some of this learning.",
+        "file": "what-bicycling-across-the-united-states-taught-me-about-software-engineering.md"
     }
 ]
 

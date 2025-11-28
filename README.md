@@ -69,9 +69,43 @@ Example project entry:
 
 ### Write Blog Posts
 
-1. Find the blog section in `index.html` (around line 160)
-2. Add new blog post cards with your content
-3. Link to full blog post pages (you can create separate HTML files for each post)
+Blog posts are loaded dynamically from `blog/blog.json`. To add or update blog posts:
+
+1. Create a markdown file (`.md`) in the `blog/` directory with your post content
+2. Create an HTML file (`.html`) in the `blog/` directory that renders the markdown (you can use the existing posts as templates)
+3. Add an entry to `blog/blog.json` with the following fields:
+   - `slug`: URL-friendly identifier (matches the HTML filename without `.html`)
+   - `title`: Post title
+   - `date`: Publication date (e.g., "November 26, 2025")
+   - `excerpt`: Short description/preview text
+   - `file`: Name of the markdown file (e.g., "my-post.md")
+   - `draft`: (optional) Set to `true` to hide the post from public listings. Omit or set to `false` to publish.
+
+Example blog entry:
+```json
+{
+    "slug": "my-new-post",
+    "title": "My New Post",
+    "date": "December 1, 2025",
+    "excerpt": "This is a brief description of my post.",
+    "file": "my-new-post.md",
+    "draft": false
+}
+```
+
+To create a draft post that won't appear on the blog listing or homepage in production:
+```json
+{
+    "slug": "work-in-progress",
+    "title": "Work in Progress",
+    "date": "December 1, 2025",
+    "excerpt": "This post is not ready yet.",
+    "file": "work-in-progress.md",
+    "draft": true
+}
+```
+
+**Note**: Draft posts will be visible when running the site locally (localhost, 127.0.0.1, or file://), but will be hidden in production. This allows you to preview drafts during development while keeping them private on the live site.
 
 ### Update Contact Information
 

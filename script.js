@@ -140,6 +140,17 @@ async function loadProjects() {
     }
 }
 
+// Check if running locally vs production
+function isLocalEnvironment() {
+    const hostname = window.location.hostname;
+    const protocol = window.location.protocol;
+    // Check for localhost, 127.0.0.1, or file:// protocol
+    return hostname === 'localhost' || 
+           hostname === '127.0.0.1' || 
+           hostname === '' ||
+           protocol === 'file:';
+}
+
 // Load and render blog post previews on homepage
 async function loadBlogPreviews() {
     const blogGrid = document.getElementById('blog-grid');
@@ -164,8 +175,13 @@ async function loadBlogPreviews() {
             throw new Error('blog.json does not contain an array');
         }
         
+        // Filter out draft posts only in production
+        const publishedPosts = isLocalEnvironment() 
+            ? posts 
+            : posts.filter(post => !post.draft);
+        
         // Show only first 3 posts on homepage
-        const previewPosts = posts.slice(0, 3);
+        const previewPosts = publishedPosts.slice(0, 3);
         
         blogGrid.innerHTML = '';
         
