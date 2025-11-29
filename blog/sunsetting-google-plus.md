@@ -7,7 +7,7 @@
 
 I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said. He sent a link to a news article: "Google Shutting Down Google+". I hadn't. But it turned out he was right. My first day of orientation was the day they announced they were shutting Google+ down.
 
-There ended up being some interesting problems to solve during the year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their system. And it required creating and sticking to our own step-by-step deprecation schedule to give partners something they could plan around.
+There ended up being some interesting problems to solve during the year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their system. And it required creating and sticking to our own step-by-step deprecation schedule to give more certainty around the change.
 
 In addition, there were cultural aspects of this experience that looking back were unique. It's been the only time in my career where the main focus of the team was not on the sunrise of something new, but rather the sunset of what was. 
 
