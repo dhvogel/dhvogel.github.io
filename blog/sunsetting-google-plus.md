@@ -5,7 +5,7 @@
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset</p>
 </div>
 
-I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said. He sent a link to a news article: "Google Shutting Down Google+". I hadn't. But he was right. My first day of orientation was the day they announced they were shutting Google+ down.
+I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said. He sent a link to a news article: "Google Shutting Down Google+". I hadn't. But he was right. My first day of orientation was the day they announced they were going to shut Google+ down.
 
 There ended up being some interesting problems to solve during the year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their system. And it required creating and sticking to our own step-by-step deprecation schedule to give partners something they could plan around.
 
