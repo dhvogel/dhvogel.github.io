@@ -20,7 +20,7 @@ Creators loved Google Plus. These could be photographers, poets, potters, painte
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Asymmetric vs Symmetric Social Network</p>
 </div>
 
-This goodbye was emotional for people who had used Google+ to build a following and potentially find some sort of meaning and/or connection in their life. I went to a community-run goodbye event like ones alluded to [here](https://www.wired.com/story/google-plus-goodbye) and there were tears. Frankly, I decided to work on this product because it was my way into Google, and I didn't know the emotional significance it had to people until I joined the team.
+This goodbye was emotional for people who had used Google+ to build a following and potentially find some sort of meaning and/or connection in their life. I went to a community-run goodbye event like ones alluded to [here](https://www.wired.com/story/google-plus-goodbye) and there were tears. Frankly, I decided to work on this product because it was my way into Google, and I didn't know the emotional significance it had until I joined the team.
 
 ## The Google Plus Team
 
