@@ -30,6 +30,6 @@ This team was what I consider to be my experience of the "old Google". It was no
 
 ## Google took care of the team
 
-Google was very lenient on the team in terms of giving us time to find a new role after the project had concluded. By the time, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had joined the company to be. I was suprised that not everyone felt like this. But I was young and ambitious and I thought that everyone thought how I thought. I just had to go build something, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
+Google was very lenient on the team in terms of giving us time to find a new role after the project had concluded. By the time, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had joined the company to be. I was suprised that not everyone felt like this. But I was young and brazenly ambitious and I thought that everyone thought how I thought. I just had to go build something, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
 
 Google and Google+ are trademarks of Google LLC. All opinions are my own.
