@@ -5,7 +5,7 @@
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset</p>
 </div>
 
-I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and he attached a link to a news article with the headline "Google Shutting Down Google+". I hadn't. But it turned out to be a precient text. My first day of orientation was the day they announced they were shutting down Google+.
+I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" he said, and he attached a link to a news article with the headline "Google Shutting Down Google+". I hadn't. But it turned out to be a precient text. My first day of orientation turned out to be the day they announced they were shutting down Google+.
 
 There ended up being some interesting problems to solve during the year. Shutting off as engrained a system as Google+ was not just a matter of hitting the power switch. Required was communication with client owners, working with them to plan ahead for the turndown, so that 500s from Google+ did not break their system. And it required creating and sticking to our own step-by-step deprecation schedule to give more certainty around the change.
 
@@ -30,6 +30,6 @@ This team was what I consider to be my experience of the "old Google". It was no
 
 ## Google took care of the team
 
-Google was very lenient on the team in terms of giving us time to find a new role after the project had concluded. By the time, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had joined the company to be. I was suprised that not everyone felt like this. But I was young and brazenly ambitious and I thought that everyone thought how I thought. I just had to go build something, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
+Google was very lenient on the team in terms of giving us time to find a new role after the project had concluded. By that time, I was ready to go, ready to go build something and prove to myself I was that Google engineer I had joined the company to be. I was suprised that not everyone felt like this. But I was young and brazenly ambitious and I thought that everyone thought how I thought. I just had to go build something, so I found a team in Cloud, the Serverless team, and that started a whole new adventure.
 
 Google and Google+ are trademarks of Google LLC. All opinions are my own.
