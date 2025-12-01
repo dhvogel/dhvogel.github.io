@@ -7,7 +7,7 @@
 
 I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" and he attached a link to a news article, "Google Shutting Down Google+". I had not. But it was a prescient message. It turned out that was the day they announced they were shutting Google+ down.
 
-Frankly when I heard the news I was not all that distraught. I was at Google now and nothing could bring me down. I was joining a Google+ team that was now making international headlines. How about that. What a great orientation icebreaker.
+Frankly when I heard the news I was not all that distraught. I was at Google now and nothing could bring me down. I was joining a Google+ team that was now making international headlines. What a great orientation icebreaker.
 
 In reality, there were some challenges about joining this sunset effort that I had yet to understand. I think it's hard to ramp up at Google in general, and particularly when joining a team experiencing a sudden change in direction. Much of the work my team had planned was effectively cancelled. So for that first year I went out to other teams to find work, and networked around until I found an open source project that needed contributors called [Google Ground](https://github.com/google/ground-platform), and I made that a 20% project. I guess when I joined Google I assumed someone would guide me to all these fantastic projects and coach me up on how to do them. But the reality was I had to find these projects and mentors on my own, and they were not always as they were assigned on the org chart.
 
