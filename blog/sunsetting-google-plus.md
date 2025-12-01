@@ -5,7 +5,7 @@
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset</p>
 </div>
 
-I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" and he attached a link to a news article, "Google Shutting Down Google+". I had not. But it was a prescient message. It turned out that my first day of orientation was the day they announced they were shutting Google+ down.
+I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: "have you seen this?" and he attached a link to a news article, "Google Shutting Down Google+". I had not. But it was a prescient message. It turned out that was the day they announced they were shutting Google+ down.
 
 Frankly when I heard the news I was not all that distraught. I was at Google now and nothing could bring me down. I was joining a Google+ team that was making international headlines. How about that. What a great orientation icebreaker.
 
