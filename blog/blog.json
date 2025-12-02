@@ -15,11 +15,11 @@
         "file": "sunsetting-google-plus.md"
     },
     {
-        "slug": "why-serverless-vpc-access-exists",
-        "title": "Why Serverless VPC Access exists",
+        "slug": "understanding-gcp-serverless-vpc-access-connectors",
+        "title": "Understanding GCP Serverless VPC Access",
         "date": "November 21, 2025",
         "excerpt": "The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.",
-        "file": "why-serverless-vpc-access-exists.md"
+        "file": "understanding-serverless-vpc-access-connectors.md"
     },
     {
         "slug": "what-bicycling-across-the-united-states-taught-me-about-software-engineering",
