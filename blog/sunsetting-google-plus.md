@@ -21,6 +21,4 @@ Through working on Google+ I feel like I got a taste of what the "old Google" wa
 
 After the project concluded, Google was lenient on the team in terms of giving us time to find a new role. Not everyone I knew was so hasty to leave. But I was. I was ready to go. I was young and I was brazenly ambitious, and I felt that this first year was a detour to my impending success. But looking back, that first year was so important to my growth. To just get thrown in to this environment and have to figure it out. I learned a lot about software, sure, but I also learned about how to navigate a big organization, and how to advocate for myself to get the outcomes that I want. I also met some incredibly talented people and felt quite humbled by it all.
 
-Such is the tale of the Google+ sunset.
-
 Google and Google+ are trademarks of Google LLC. All opinions are my own.
