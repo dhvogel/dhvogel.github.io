@@ -1,6 +1,6 @@
-# What going to business school did for me
+# What business school did for me
 
-As my first year of business school wound down, I felt alone. I knew I didn't want to be a consultant or a banker. I didn't feel like I fit in. But quitting *now*? Nuh-uh. I had already studied for the GRE, wrote application essays, shepherded recommendations, quit my software engineering role at Google, moved to New Haven, completed the first year core. I owed it to myself to finish what I had started. Now that it’s over, I have time to reflect, to think about what I was really looking for when I went back to school, and what I got out of it.
+As my first year at Yale SOM wound down, I felt alone. I knew I didn't want to be a consultant or a banker. I didn't feel like I fit in. But quitting *now*? Nuh-uh. I had already studied for the GRE, wrote application essays, shepherded recommendations, quit my software engineering role at Google, moved to New Haven, completed the first year core. I owed it to myself to finish what I had started. Now that it’s over, I have time to reflect, to think about what I was really looking for when I went back to school, and what I got out of it.
 
 When I applied to school, I just needed a change. I was burned out from Covid. I was inside all the time, working out of my garage. I felt like I was just watching my life pass me by, and when I almost lost my little brother, I took it as a sign to change. I wanted to get my spark back, to feel like I was learning again. I wanted to get outside and meet new people, explore the world. I felt like I could get both of these things out of going back to school, so I set my sights on business school.
 
