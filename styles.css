@@ -63,6 +63,12 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: none;
+    margin-left: 0.125rem;
+}
+
+.nav-brand a {
+    transition: none;
 }
 
 .nav-brand a {
@@ -626,6 +632,10 @@ section {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .navbar .container {
+        padding: 1rem 1rem;
     }
 
     .container {
