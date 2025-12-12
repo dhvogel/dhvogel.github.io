@@ -63,11 +63,15 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    transition: none;
+    transition: none !important;
 }
 
 .nav-brand a {
-    transition: none;
+    transition: none !important;
+}
+
+.nav-brand * {
+    transition: none !important;
 }
 
 .nav-brand a {
