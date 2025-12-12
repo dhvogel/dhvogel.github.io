@@ -1,15 +1,97 @@
+// Dark Mode Toggle
+function initDarkMode() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    const html = document.documentElement;
+    
+    // Apply saved theme
+    if (savedTheme === 'dark') {
+        html.setAttribute('data-theme', 'dark');
+    } else {
+        html.removeAttribute('data-theme');
+    }
+    
+    // Create or update theme toggle button
+    let themeToggle = document.querySelector('.theme-toggle');
+    if (!themeToggle) {
+        themeToggle = document.createElement('button');
+        themeToggle.className = 'theme-toggle';
+        themeToggle.setAttribute('aria-label', 'Toggle dark mode');
+        
+        // Insert inside nav-brand
+        const navBrand = document.querySelector('.nav-brand');
+        if (navBrand) {
+            navBrand.appendChild(themeToggle);
+        }
+    }
+    
+    // Update button icon
+    updateThemeIcon(themeToggle, savedTheme);
+    
+    // Add click handler
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        if (newTheme === 'dark') {
+            html.setAttribute('data-theme', 'dark');
+        } else {
+            html.removeAttribute('data-theme');
+        }
+        
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(themeToggle, newTheme);
+    });
+}
+
+function updateThemeIcon(button, theme) {
+    const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <line x1="12" y1="2" x2="12" y2="4"></line>
+        <line x1="12" y1="20" x2="12" y2="22"></line>
+        <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+        <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+        <line x1="2" y1="12" x2="4" y2="12"></line>
+        <line x1="20" y1="12" x2="22" y2="12"></line>
+        <line x1="6.34" y1="17.66" x2="4.93" y2="19.07"></line>
+        <line x1="19.07" y1="4.93" x2="17.66" y2="6.34"></line>
+    </svg>`;
+    
+    const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>`;
+    
+    if (theme === 'dark') {
+        button.innerHTML = sunIcon;
+        button.setAttribute('aria-label', 'Switch to light mode');
+    } else {
+        button.innerHTML = moonIcon;
+        button.setAttribute('aria-label', 'Switch to dark mode');
+    }
+}
+
+// Initialize dark mode when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDarkMode);
+} else {
+    initDarkMode();
+}
+
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
+        if (navMenu) {
+            navMenu.classList.remove('active');
+        }
     });
 });
 
