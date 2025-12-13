@@ -166,11 +166,13 @@ body {
     margin-bottom: 1rem;
     line-height: 1.3;
     color: var(--text-secondary);
+    transition: color 0.3s ease;
 }
 
 .highlight {
     font-weight: 400;
-    transition: color 0.3s ease;
+    transition: none;
+    color: inherit;
 }
 
 .hero-subtitle {
