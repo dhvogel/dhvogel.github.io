@@ -170,6 +170,7 @@ body {
 
 .highlight {
     font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .hero-subtitle {
