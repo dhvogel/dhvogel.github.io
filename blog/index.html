@@ -140,29 +140,84 @@
                     throw new Error('blog.json does not contain an array');
                 }
                 
-                // Filter out draft posts only in production
-                const publishedPosts = isLocalEnvironment() 
-                    ? posts 
-                    : posts.filter(post => !post.draft);
+                // Show all posts on the blog listing page (including drafts)
+                // Sort posts: pinned first, then by date (newest first)
+                const sortedPosts = posts.sort((a, b) => {
+                    const aPinned = a.pinned === true || a.pinned === "true";
+                    const bPinned = b.pinned === true || b.pinned === "true";
+                    
+                    // Pinned posts come first
+                    if (aPinned && !bPinned) return -1;
+                    if (!aPinned && bPinned) return 1;
+                    
+                    // If both pinned or both not pinned, sort by date (newest first)
+                    // Parse dates like "December 10, 2025"
+                    const parseDate = (dateStr) => {
+                        const date = new Date(dateStr);
+                        return isNaN(date.getTime()) ? new Date(0) : date;
+                    };
+                    
+                    const aDate = parseDate(a.date);
+                    const bDate = parseDate(b.date);
+                    return bDate - aDate;
+                });
                 
                 blogGrid.innerHTML = '';
                 
-                publishedPosts.forEach((post) => {
+                sortedPosts.forEach((post) => {
                     // Create blog card
                     const card = document.createElement('article');
                     card.className = 'blog-card';
+                    
+                    // Date and pinned indicator container
+                    const dateContainer = document.createElement('div');
+                    dateContainer.style.display = 'flex';
+                    dateContainer.style.alignItems = 'center';
+                    dateContainer.style.gap = '0.5rem';
+                    dateContainer.style.marginBottom = '0.75rem';
                     
                     // Date
                     const date = document.createElement('div');
                     date.className = 'blog-date';
                     date.textContent = post.date;
-                    card.appendChild(date);
+                    dateContainer.appendChild(date);
+                    
+                    // Pinned indicator
+                    const isPinned = post.pinned === true || post.pinned === "true";
+                    if (isPinned) {
+                        const pinnedIcon = document.createElement('span');
+                        pinnedIcon.className = 'blog-pinned';
+                        pinnedIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="17" x2="12" y2="22"></line>
+                            <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path>
+                        </svg>`;
+                        pinnedIcon.setAttribute('aria-label', 'Pinned post');
+                        dateContainer.appendChild(pinnedIcon);
+                    }
+                    
+                    // Draft indicator
+                    const isDraft = post.draft === true || post.draft === "true";
+                    if (isDraft) {
+                        const draftIcon = document.createElement('span');
+                        draftIcon.className = 'blog-draft';
+                        draftIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>`;
+                        draftIcon.setAttribute('aria-label', 'Draft post');
+                        dateContainer.appendChild(draftIcon);
+                    }
+                    
+                    card.appendChild(dateContainer);
                     
                     // Title
                     const title = document.createElement('h3');
                     title.className = 'blog-title';
                     const titleLink = document.createElement('a');
-                    titleLink.href = `${post.slug}.html`;
+                    titleLink.href = `${post.slug}`;
                     titleLink.textContent = post.title;
                     title.appendChild(titleLink);
                     card.appendChild(title);
@@ -175,7 +230,7 @@
                     
                     // Read More link
                     const readMore = document.createElement('a');
-                    readMore.href = `${post.slug}.html`;
+                    readMore.href = `${post.slug}`;
                     readMore.className = 'blog-read-more';
                     readMore.textContent = 'Read More →';
                     card.appendChild(readMore);
@@ -187,23 +242,6 @@
                 blogGrid.innerHTML = `<p style="color: var(--text-secondary);">Unable to load blog posts. ${error.message}</p>`;
             }
         }
-
-        // Mobile Navigation Toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-        }
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
 
         // Load blog listing when DOM is ready
         if (document.readyState === 'loading') {

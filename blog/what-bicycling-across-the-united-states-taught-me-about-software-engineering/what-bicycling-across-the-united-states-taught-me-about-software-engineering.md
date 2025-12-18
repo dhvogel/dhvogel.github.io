@@ -6,15 +6,15 @@ The summer between my first and second year of grad school, I rode my bicycle so
 
 <div style="display: flex; gap: 1rem; margin: 2rem 0; align-items: flex-start;">
   <div style="flex: 1;">
-    <img src="../images/portland-maine.jpeg" alt="Portland, Maine" style="width: 100%; height: auto; display: block;">
+    <img src="../../images/portland-maine.jpeg" alt="Portland, Maine" style="width: 100%; height: auto; display: block;">
     <p style="margin-top: 0.5rem; color: #666; font-size: 0.875rem; text-align: center;">Portland, Maine - The starting point</p>
   </div>
   <div style="flex: 1;">
-    <img src="../images/continental-divide.jpeg" alt="Continental Divide" style="width: 100%; height: auto; display: block;">
+    <img src="../../images/continental-divide.jpeg" alt="Continental Divide" style="width: 100%; height: auto; display: block;">
     <p style="margin-top: 0.5rem; color: #666; font-size: 0.875rem; text-align: center;">At the top of the Continental Divide</p>
   </div>
   <div style="flex: 1;">
-    <img src="../images/pacific-city-oregon.png" alt="Pacific City, Oregon" style="width: 100%; height: auto; display: block;">
+    <img src="../../images/pacific-city-oregon.png" alt="Pacific City, Oregon" style="width: 100%; height: auto; display: block;">
     <p style="margin-top: 0.5rem; color: #666; font-size: 0.875rem; text-align: center;">Pacific City, Oregon - The finish</p>
   </div>
 </div>

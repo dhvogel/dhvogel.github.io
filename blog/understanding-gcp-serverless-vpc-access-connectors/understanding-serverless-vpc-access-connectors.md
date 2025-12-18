@@ -7,7 +7,7 @@ When I joined the GCP Serverless engineering team in October of 2019, I was assi
 Serverless VPC Access Connectors allow you to call a public Cloud Run service and have that service connect to private data, while keeping all packets within Google's network. Prior to VPC Access, you had a Cloud Run service, you had a CloudSQL or similar database in the VPC, and in order to get the Cloud Run Service to access the database, you had to expose the database publicly and then tell Cloud Run to access it like any other public endpoint.
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/pre-vpcaccess.png" alt="Cloud Run accessing CloudSQL before VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+  <img src="../../images/pre-vpcaccess.png" alt="Cloud Run accessing CloudSQL before VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Prior to VPC Access</p>
 </div>
 
@@ -20,7 +20,7 @@ So this part of the system, while relatively small, was hugely important to the 
 VPC Access is really a chain of components internal to Google that forwards packets from Cloud Run App to a VPC through a path that is all Google-owned. The system provisions managed networking resources on behalf of the customer, abstracting away the underlying details.
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/vpcaccess.png" alt="Cloud Run accessing CloudSQL with VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+  <img src="../../images/vpcaccess.png" alt="Cloud Run accessing CloudSQL with VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">VPC Access</p>
 </div>
 
@@ -33,7 +33,7 @@ One quirk of this setup is that the customer provisions a "connector", where a "
 Another part of the organization recently released Direct VPC Egress, which I believe uses some new GCE Networking functionality to obviate the need for the Connector (but not the need for the Private IP addresses). I wasn't involved in that effort so I don't know the new architecture. But if I had to guess, I think it would look something like this:
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/post-vpcaccess.png" alt="Cloud Run accessing CloudSQL post VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+  <img src="../../images/post-vpcaccess.png" alt="Cloud Run accessing CloudSQL post VPC Access" style="max-width: 100%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">Post VPC Access Connectors</p>
 </div>
 

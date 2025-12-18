@@ -1,7 +1,7 @@
 # Sunsetting Google+
 
 <div style="display: flex; flex-direction: column; align-items: center; margin: 2rem 0;">
-  <img src="../images/gplus-sunset.png" alt="Google+ sunsetting" style="max-width: 40%; height: auto; border: 1px solid #ddd;">
+  <img src="../../images/gplus-sunset.png" alt="Google+ sunsetting" style="max-width: 40%; height: auto; border: 1px solid #ddd;">
   <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem; text-align: center;">The Google+ sunset</p>
 </div>
 

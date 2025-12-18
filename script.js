@@ -235,6 +235,28 @@ function isLocalEnvironment() {
 
 // Load and render blog post previews on homepage
 async function loadBlogPreviews() {
+    // CRITICAL: Don't run on blog pages - check this FIRST before doing anything
+    const pathname = window.location.pathname;
+    const href = window.location.href.toLowerCase();
+    
+    // If we're on any blog page, return immediately
+    if (pathname.includes('/blog/') || 
+        pathname === '/blog' || 
+        pathname.startsWith('/blog') ||
+        href.includes('/blog/') ||
+        href.includes('/blog/index.html')) {
+        return; // Don't run on blog pages
+    }
+    
+    // Only run on root homepage
+    const isHomePage = pathname === '/' || 
+                       pathname === '/index.html' ||
+                       (pathname.endsWith('/index.html') && !pathname.includes('/blog/'));
+    
+    if (!isHomePage) {
+        return; // Only run on homepage
+    }
+    
     const blogGrid = document.getElementById('blog-grid');
     if (!blogGrid) return;
     
@@ -262,8 +284,22 @@ async function loadBlogPreviews() {
             ? posts 
             : posts.filter(post => !post.draft);
         
+        // Sort posts: pinned first, then by date (newest first)
+        const sortedPosts = publishedPosts.sort((a, b) => {
+            const aPinned = a.pinned === true || a.pinned === "true";
+            const bPinned = b.pinned === true || b.pinned === "true";
+            
+            if (aPinned && !bPinned) return -1;
+            if (!aPinned && bPinned) return 1;
+            
+            // If both pinned or both not pinned, sort by date (newest first)
+            const aDate = new Date(a.date);
+            const bDate = new Date(b.date);
+            return bDate - aDate;
+        });
+        
         // Show only first 3 posts on homepage
-        const previewPosts = publishedPosts.slice(0, 3);
+        const previewPosts = sortedPosts.slice(0, 3);
         
         blogGrid.innerHTML = '';
         
@@ -272,17 +308,55 @@ async function loadBlogPreviews() {
             const card = document.createElement('article');
             card.className = 'blog-card';
             
+            // Date and pinned indicator container
+            const dateContainer = document.createElement('div');
+            dateContainer.style.display = 'flex';
+            dateContainer.style.alignItems = 'center';
+            dateContainer.style.gap = '0.5rem';
+            dateContainer.style.marginBottom = '0.75rem';
+            
             // Date
             const date = document.createElement('div');
             date.className = 'blog-date';
             date.textContent = post.date;
-            card.appendChild(date);
+            dateContainer.appendChild(date);
+            
+            // Pinned indicator
+            const isPinned = post.pinned === true || post.pinned === "true";
+            if (isPinned) {
+                const pinnedIcon = document.createElement('span');
+                pinnedIcon.className = 'blog-pinned';
+                pinnedIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="17" x2="12" y2="22"></line>
+                    <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path>
+                </svg>`;
+                pinnedIcon.setAttribute('aria-label', 'Pinned post');
+                dateContainer.appendChild(pinnedIcon);
+            }
+            
+            // Draft indicator
+            const isDraft = post.draft === true || post.draft === "true";
+            if (isDraft) {
+                const draftIcon = document.createElement('span');
+                draftIcon.className = 'blog-draft';
+                draftIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>`;
+                draftIcon.setAttribute('aria-label', 'Draft post');
+                dateContainer.appendChild(draftIcon);
+            }
+            
+            card.appendChild(dateContainer);
             
             // Title
             const title = document.createElement('h3');
             title.className = 'blog-title';
             const titleLink = document.createElement('a');
-            titleLink.href = `/blog/${post.slug}.html`;
+            titleLink.href = `/blog/${post.slug}`;
             titleLink.textContent = post.title;
             title.appendChild(titleLink);
             card.appendChild(title);
@@ -295,7 +369,7 @@ async function loadBlogPreviews() {
             
             // Read More link
             const readMore = document.createElement('a');
-            readMore.href = `/blog/${post.slug}.html`;
+            readMore.href = `/blog/${post.slug}`;
             readMore.className = 'blog-read-more';
             readMore.textContent = 'Read More →';
             card.appendChild(readMore);

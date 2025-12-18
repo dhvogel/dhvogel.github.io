@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product. Understanding why this infrastructure component exists and the problems it solves.">
-    <meta name="keywords" content="Serverless VPC Access, Google Cloud Platform, GCP, serverless, VPC, cloud infrastructure, connectors, Dan Vogel">
+    <meta name="description" content="Anecdotes from the year I spent helping to turn down Google+. Reflections on shutting down a major product, working with creators, and the Google+ team experience.">
+    <meta name="keywords" content="Google Plus, Google+, sunset, product shutdown, software engineering, Dan Vogel">
     <meta name="author" content="Dan Vogel">
     <meta name="robots" content="index, follow">
-    <meta name="article:published_time" content="2025-11-21">
+    <meta name="article:published_time" content="2025-11-26">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors.html">
-    <meta property="og:title" content="Understanding Serverless VPC Access Connectors - Dan Vogel">
-    <meta property="og:description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product. Understanding why this infrastructure component exists and the problems it solves.">
+    <meta property="og:url" content="https://dhvogel.com/blog/sunsetting-google-plus">
+    <meta property="og:title" content="Sunsetting Google Plus - Dan Vogel">
+    <meta property="og:description" content="Anecdotes from the year I spent helping to turn down Google+. Reflections on shutting down a major product, working with creators, and the Google+ team experience.">
     <meta property="og:site_name" content="Dan Vogel">
     <meta property="article:author" content="Dan Vogel">
-    <meta property="article:published_time" content="2025-11-21">
+    <meta property="article:published_time" content="2025-11-26">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors.html">
-    <meta name="twitter:title" content="Understanding Serverless VPC Access Connectors - Dan Vogel">
-    <meta name="twitter:description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product. Understanding why this infrastructure component exists and the problems it solves.">
+    <meta name="twitter:url" content="https://dhvogel.com/blog/sunsetting-google-plus">
+    <meta name="twitter:title" content="Sunsetting Google Plus - Dan Vogel">
+    <meta name="twitter:description" content="Anecdotes from the year I spent helping to turn down Google+. Reflections on shutting down a major product, working with creators, and the Google+ team experience.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors.html">
+    <link rel="canonical" href="https://dhvogel.com/blog/sunsetting-google-plus">
     
-    <title>Understanding Serverless VPC Access Connectors - Dan Vogel</title>
+    <title>Sunsetting Google Plus - Dan Vogel</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
     <!-- Google Analytics -->
@@ -47,7 +47,7 @@
             }
         })();
     </script>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -58,10 +58,10 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Understanding Serverless VPC Access Connectors",
-        "description": "The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.",
-        "url": "https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors.html",
-        "datePublished": "2025-11-21",
+        "headline": "Sunsetting Google Plus",
+        "description": "Anecdotes from the year I spent helping to turn down Google+.",
+        "url": "https://dhvogel.com/blog/sunsetting-google-plus",
+        "datePublished": "2025-11-26",
         "author": {
             "@type": "Person",
             "name": "Dan Vogel",
@@ -74,7 +74,7 @@
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors.html"
+            "@id": "https://dhvogel.com/blog/sunsetting-google-plus"
         }
     }
     </script>
@@ -84,13 +84,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="../index.html">Dan Vogel</a>
+                <a href="../../index.html">Dan Vogel</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -104,7 +104,7 @@
     <article class="blog-post-page" style="padding-top: 100px;">
         <div class="container" style="max-width: 800px;">
             <div class="blog-post-header" style="margin-bottom: 3rem;">
-                <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">← Back to Blog</a>
+                <a href="../index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">← Back to Blog</a>
                 <div id="blog-post-content">
                     <!-- Blog post content will be loaded here -->
                 </div>
@@ -204,7 +204,7 @@
             if (!contentDiv) return;
             
             try {
-                const response = await fetch('understanding-serverless-vpc-access-connectors.md');
+                const response = await fetch('sunsetting-google-plus.md');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -332,15 +332,5 @@
     </style>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
 
 

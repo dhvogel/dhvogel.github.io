@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering.">
-    <meta name="keywords" content="bicycling, cycling, cross country, software engineering, lessons learned, Dan Vogel, Yale">
+    <meta name="description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.">
+    <meta name="keywords" content="GCP, Google Cloud Platform, Serverless VPC Access, VPC connectors, serverless, networking, Dan Vogel">
     <meta name="author" content="Dan Vogel">
     <meta name="robots" content="index, follow">
-    <meta name="article:published_time" content="2025-11-11">
+    <meta name="article:published_time" content="2025-11-21">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://dhvogel.com/blog/what-bicycling-across-the-united-states-taught-me-about-software-engineering.html">
-    <meta property="og:title" content="What bicycling across the United States taught me about software engineering - Dan Vogel">
-    <meta property="og:description" content="The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering.">
+    <meta property="og:url" content="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors">
+    <meta property="og:title" content="Understanding GCP Serverless VPC Access - Dan Vogel">
+    <meta property="og:description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.">
     <meta property="og:site_name" content="Dan Vogel">
     <meta property="article:author" content="Dan Vogel">
-    <meta property="article:published_time" content="2025-11-11">
+    <meta property="article:published_time" content="2025-11-21">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://dhvogel.com/blog/what-bicycling-across-the-united-states-taught-me-about-software-engineering.html">
-    <meta name="twitter:title" content="What bicycling across the United States taught me about software engineering - Dan Vogel">
-    <meta name="twitter:description" content="The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering.">
+    <meta name="twitter:url" content="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors">
+    <meta name="twitter:title" content="Understanding GCP Serverless VPC Access - Dan Vogel">
+    <meta name="twitter:description" content="The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://dhvogel.com/blog/what-bicycling-across-the-united-states-taught-me-about-software-engineering.html">
+    <link rel="canonical" href="https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors">
     
-    <title>What bicycling across the United States taught me about software engineering - Dan Vogel</title>
+    <title>Understanding GCP Serverless VPC Access - Dan Vogel</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
     <!-- Google Analytics -->
@@ -47,7 +47,7 @@
             }
         })();
     </script>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -58,10 +58,10 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "What bicycling across the United States taught me about software engineering",
-        "description": "The summer between my first and second year of grad school, I rode my bicycle solo across America, from Portland, Maine to Pacific City, Oregon. Having just turned 30, I felt that for a journey like this, it was either now or never. I learned a lot over the course of this trip, about myself and the world around me, and I feel that some of it is applicable to software engineering. This post shares some of this learning.",
-        "url": "https://dhvogel.com/blog/what-bicycling-across-the-united-states-taught-me-about-software-engineering.html",
-        "datePublished": "2025-11-11",
+        "headline": "Understanding GCP Serverless VPC Access",
+        "description": "The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.",
+        "url": "https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors",
+        "datePublished": "2025-11-21",
         "author": {
             "@type": "Person",
             "name": "Dan Vogel",
@@ -74,7 +74,7 @@
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://dhvogel.com/blog/what-bicycling-across-the-united-states-taught-me-about-software-engineering.html"
+            "@id": "https://dhvogel.com/blog/understanding-gcp-serverless-vpc-access-connectors"
         }
     }
     </script>
@@ -84,13 +84,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="../index.html">Dan Vogel</a>
+                <a href="../../index.html">Dan Vogel</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -104,7 +104,7 @@
     <article class="blog-post-page" style="padding-top: 100px;">
         <div class="container" style="max-width: 800px;">
             <div class="blog-post-header" style="margin-bottom: 3rem;">
-                <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">← Back to Blog</a>
+                <a href="../index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">← Back to Blog</a>
                 <div id="blog-post-content">
                     <!-- Blog post content will be loaded here -->
                 </div>
@@ -204,7 +204,7 @@
             if (!contentDiv) return;
             
             try {
-                const response = await fetch('what-bicycling-across-the-united-states-taught-me-about-software-engineering.md');
+                const response = await fetch('understanding-serverless-vpc-access-connectors.md');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -332,4 +332,3 @@
     </style>
 </body>
 </html>
-

@@ -1,31 +1,48 @@
 [
     {
+        "slug": "on-struggling-in-business-school",
+        "title": "On Struggling in Business School",
+        "date": "December 14, 2025",
+        "excerpt": "Reflections on struggling in business school",
+        "file": "on-struggling-in-business-school/on-struggling-in-business-school.md",
+        "draft": "true"
+    },
+    {
+        "slug": "dewalt-and-dev-tools",
+        "title": "DeWalt and Dev Tools",
+        "date": "December 14, 2025",
+        "excerpt": "Blog post about DeWalt and dev tools",
+        "file": "dewalt-and-dev-tools/dewalt-and-dev-tools.md",
+        "draft": "true"
+    },
+    {
         "slug": "what-going-to-business-school-did-for-me",
         "title": "What going to business school did for me",
         "date": "December 10, 2025",
         "excerpt": "As my first year at Yale SOM wound down, I felt alone. I knew I didn't want to be a consultant or a banker. I didn't feel like I fit in. But quitting now? Nuh-uh.",
-        "file": "what-going-to-business-school-did-for-me.md"
+        "file": "what-going-to-business-school-did-for-me/what-going-to-business-school-did-for-me.md",
+        "pinned": "true"
     },
     {
         "slug": "sunsetting-google-plus",
         "title": "Sunsetting Google Plus",
         "date": "December 2, 2025",
         "excerpt": "Remembering my first year at Google which I spent helping to turn down Google+.",
-        "file": "sunsetting-google-plus.md"
+        "file": "sunsetting-google-plus/sunsetting-google-plus.md"
     },
     {
         "slug": "understanding-gcp-serverless-vpc-access-connectors",
         "title": "Understanding GCP Serverless VPC Access",
         "date": "November 21, 2025",
         "excerpt": "The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.",
-        "file": "understanding-serverless-vpc-access-connectors.md"
+        "file": "understanding-gcp-serverless-vpc-access-connectors/understanding-serverless-vpc-access-connectors.md"
     },
     {
         "slug": "what-bicycling-across-the-united-states-taught-me-about-software-engineering",
         "title": "What bicycling across the United States taught me about software engineering",
         "date": "November 11, 2025",
         "excerpt": "Some thoughts on how bicycling across the U.S. relates to software engineering.",
-        "file": "what-bicycling-across-the-united-states-taught-me-about-software-engineering.md",
+        "file": "what-bicycling-across-the-united-states-taught-me-about-software-engineering/what-bicycling-across-the-united-states-taught-me-about-software-engineering.md",
         "draft": true
     }
 ]
