@@ -140,9 +140,13 @@
                     throw new Error('blog.json does not contain an array');
                 }
                 
-                // Show all posts on the blog listing page (including drafts)
+                // Filter out draft posts only in production
+                const publishedPosts = isLocalEnvironment() 
+                    ? posts 
+                    : posts.filter(post => !post.draft);
+                
                 // Sort posts: pinned first, then by date (newest first)
-                const sortedPosts = posts.sort((a, b) => {
+                const sortedPosts = publishedPosts.sort((a, b) => {
                     const aPinned = a.pinned === true || a.pinned === "true";
                     const bPinned = b.pinned === true || b.pinned === "true";
                     
