@@ -31,20 +31,6 @@
         "file": "what-going-to-business-school-did-for-me/what-going-to-business-school-did-for-me.md"
     },
     {
-        "slug": "sunsetting-google-plus",
-        "title": "Sunsetting Google Plus",
-        "date": "December 2, 2025",
-        "excerpt": "Remembering my first year at Google which I spent helping to turn down Google+.",
-        "file": "sunsetting-google-plus/sunsetting-google-plus.md"
-    },
-    {
-        "slug": "understanding-gcp-serverless-vpc-access-connectors",
-        "title": "Understanding GCP Serverless VPC Access",
-        "date": "November 21, 2025",
-        "excerpt": "The technical and business rationale for Google Cloud Platform's Serverless VPC Access product.",
-        "file": "understanding-gcp-serverless-vpc-access-connectors/understanding-serverless-vpc-access-connectors.md"
-    },
-    {
         "slug": "what-bicycling-across-the-united-states-taught-me-about-software-engineering",
         "title": "What bicycling across the United States taught me about software engineering",
         "date": "November 11, 2025",
