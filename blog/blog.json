@@ -1,5 +1,19 @@
 [
     {
+        "slug": "sunsetting-google-plus",
+        "title": "Sunsetting Google+",
+        "date": "November 25, 2025",
+        "excerpt": "I was at my first day of orientation at Google all excited to join the Google+ team when I got a text from my dad: have you seen this? and he attached a link to a news article, Google Shutting Down Google+.",
+        "file": "sunsetting-google-plus/sunsetting-google-plus.md"
+    },
+    {
+        "slug": "understanding-gcp-serverless-vpc-access-connectors",
+        "title": "Understanding GCP Serverless VPC Access",
+        "date": "December 3, 2025",
+        "excerpt": "When I joined the GCP Serverless engineering team in October of 2019, I was assigned to a relatively small part of the system called Serverless VPC Access Connectors.",
+        "file": "understanding-gcp-serverless-vpc-access-connectors/understanding-serverless-vpc-access-connectors.md"
+    },
+    {
         "slug": "how-to-test-a-data-pipeline",
         "title": "How to Test a Data Pipeline",
         "date": "December 19, 2025",

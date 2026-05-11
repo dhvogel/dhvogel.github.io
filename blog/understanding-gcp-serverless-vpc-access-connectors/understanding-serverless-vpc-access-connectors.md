@@ -1,6 +1,6 @@
 # Understanding GCP Serverless VPC Access
 
-When I joined the GCP Serverless engineering team in October of 2019, I was assigned to a relatively small part of the system called "Serverless VPC Access" (or sometimes, Serverless VPC Access *Connectors*). For some fleeting time I had no idea what this component did or what purpose it served. Because this team turned over frequently, I found it hard to find someone with the full context. Over time, I pieced together bits of this story until I had something that made sense to me. This is that story.
+When I joined the GCP Serverless engineering team in October of 2019, I was assigned to a relatively small part of the system called "Serverless VPC Access" (or sometimes, Serverless VPC Access Connectors). For some fleeting time I had no idea what this component did or what purpose it served. Over time, I pieced together bits of this story until I had something that made sense to me. This is that story.
 
 ## Before Serverless VPC Access Connectors
 
