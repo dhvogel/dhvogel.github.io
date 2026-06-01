@@ -240,18 +240,18 @@ async function loadBlogPreviews() {
     const href = window.location.href.toLowerCase();
     
     // If we're on any blog page, return immediately
-    if (pathname.includes('/blog/') || 
-        pathname === '/blog' || 
-        pathname.startsWith('/blog') ||
-        href.includes('/blog/') ||
-        href.includes('/blog/index.html')) {
+    if (pathname.includes('/essays/') || 
+        pathname === '/essays' || 
+        pathname.startsWith('/essays') ||
+        href.includes('/essays/') ||
+        href.includes('/essays/index.html')) {
         return; // Don't run on blog pages
     }
     
     // Only run on root homepage
     const isHomePage = pathname === '/' || 
                        pathname === '/index.html' ||
-                       (pathname.endsWith('/index.html') && !pathname.includes('/blog/'));
+                       (pathname.endsWith('/index.html') && !pathname.includes('/essays/'));
     
     if (!isHomePage) {
         return; // Only run on homepage
@@ -262,11 +262,11 @@ async function loadBlogPreviews() {
     
     try {
         // Try different possible paths
-        let response = await fetch('blog/blog.json');
+        let response = await fetch('essays/essays.json');
         
-        // If that fails, try without blog/ prefix (in case we're in a subdirectory)
+        // If that fails, try absolute path (in case we're in a subdirectory)
         if (!response.ok) {
-            response = await fetch('/blog/blog.json');
+            response = await fetch('/essays/essays.json');
         }
         
         if (!response.ok) {
@@ -356,7 +356,7 @@ async function loadBlogPreviews() {
             const title = document.createElement('h3');
             title.className = 'blog-title';
             const titleLink = document.createElement('a');
-            titleLink.href = `/blog/${post.slug}`;
+            titleLink.href = `/essays/${post.slug}`;
             titleLink.textContent = post.title;
             title.appendChild(titleLink);
             card.appendChild(title);
@@ -369,7 +369,7 @@ async function loadBlogPreviews() {
             
             // Read More link
             const readMore = document.createElement('a');
-            readMore.href = `/blog/${post.slug}`;
+            readMore.href = `/essays/${post.slug}`;
             readMore.className = 'blog-read-more';
             readMore.textContent = 'Read More →';
             card.appendChild(readMore);

@@ -353,6 +353,197 @@ section {
     gap: 3rem;
 }
 
+/* Essay List (Paul Graham style) */
+.essay-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 640px;
+}
+
+.essay-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+}
+
+.essay-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.essay-link:hover {
+    text-decoration: underline;
+}
+
+/* Experience Timeline */
+.experience-page {
+    min-height: 80vh;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2.75rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Vertical connector line */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 1.5rem;
+    bottom: -0.25rem;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 1.4rem;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    border-radius: 50%;
+    background-color: var(--bg-white);
+    border: 3px solid var(--primary-color);
+    z-index: 1;
+}
+
+/* Company card */
+.timeline-body {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.timeline-body:hover {
+    border-color: var(--text-secondary);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.company-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem;
+    width: 2.75rem;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.company-duration {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0 0 0 3.6rem;
+}
+
+.role {
+    position: relative;
+    margin-top: 1.1rem;
+    padding-left: 1.1rem;
+}
+
+.role::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 50%;
+    background-color: var(--border-color);
+}
+
+.role-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.role-meta {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    margin: 0.15rem 0 0;
+}
+
+.role-location {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    margin: 0.15rem 0 0;
+}
+
+.role-team {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background-color: var(--border-color);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    margin: 0.45rem 0 0;
+}
+
+.experience-summary {
+    margin-top: 1.25rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.experience-summary p {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.experience-summary p + p {
+    margin-top: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    .timeline-item {
+        padding-left: 2rem;
+    }
+}
+
 .blog-card {
     border-top: 1px solid var(--border-color);
     padding-top: 1.5rem;

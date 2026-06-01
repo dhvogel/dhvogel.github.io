@@ -1,0 +1,1 @@
+I quit working at Google to go back to school. I wanted to feel like I was learning again as I reconstructed my life post-Covid. I did learn. I also completed a number of side-quests like trying stand-up comedy for a year and solo bikepacking across the U.S. and Europe. See more [here](/essays/what-going-to-business-school-did-for-me/) and [here](/essays/on-trying-comedy/).

@@ -1,0 +1,1 @@
+At Google, I learned how software delivery works at one of the world's top tech companies. I went from a junior engineer who needed the guidance of someone more senior, to someone who could identify and scope engineering projects on their own, and guide people who were more junior.
