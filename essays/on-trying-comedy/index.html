@@ -215,6 +215,31 @@
                 const html = marked.parse(markdown);
                 
                 contentDiv.innerHTML = html;
+
+                // Insert publish date (Month YYYY) under the title, PG-style
+                try {
+                    const parts = window.location.pathname.split('/').filter(Boolean);
+                    let slug = parts.pop();
+                    if (slug === 'index.html') slug = parts.pop();
+                    const postsResp = await fetch('../essays.json');
+                    if (postsResp.ok) {
+                        const posts = await postsResp.json();
+                        const post = posts.find(p => p.slug === slug);
+                        const h1 = contentDiv.querySelector('h1');
+                        if (post && post.date && h1) {
+                            const d = new Date(post.date);
+                            const label = isNaN(d.getTime())
+                                ? post.date
+                                : d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                            const dateEl = document.createElement('p');
+                            dateEl.className = 'post-date';
+                            dateEl.textContent = label;
+                            h1.insertAdjacentElement('afterend', dateEl);
+                        }
+                    }
+                } catch (e) {
+                    console.error('Error loading post date:', e);
+                }
             } catch (error) {
                 console.error('Error loading blog post:', error);
                 contentDiv.innerHTML = `<p style="color: var(--text-secondary);">Unable to load blog post. ${error.message}</p>`;

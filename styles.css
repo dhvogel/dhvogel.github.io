@@ -538,6 +538,13 @@ section {
     margin-top: 0.85rem;
 }
 
+#blog-post-content .post-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: -0.5rem;
+    margin-bottom: 2.5rem;
+}
+
 @media (max-width: 600px) {
     .timeline-item {
         padding-left: 2rem;
