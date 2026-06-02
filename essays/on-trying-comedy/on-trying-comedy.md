@@ -1,8 +1,8 @@
 # On Trying Comedy
 
-In 2023, every day for a year, I did open-mic stand-up comedy. It was a humbling time. But looking back it taught me a few things.
+In 2023, every day for a year, I did open-mic stand-up comedy. It was a humbling time. But it taught me a few things.
 
-I was surprised to find that not all of the great local comedians were hilariously funny people off the stage. Some of them I found to be not that funny at all. But all of them *were* extraordinarily disciplined. Constantly writing new jokes, evolving their act, doing the painful exercise of showing up to open mics to hone new material in front of other comedians. I learned it took hard work to be funny.
+I learned that creating good content requires discipline. The comedians I met that I respected weren’t all outrageously funny people all the time. In fact, I was surprised at how many of them *weren’t* necessarily funny people. But the good ones were extraordinarily disciplined. Constantly writing new jokes, evolving their act, doing the painful exercise of showing up to open mics to hone new material in front of other comedians. Funny took intention and effort.
 
 I got practice in public speaking. It helped me to learn how to be myself on stage. Or rather, to learn that being myself is *totally enough* on stage. I think a lot of my early mistakes in comedy were around trying to be someone who I wasn’t, someone who I thought the crowd would like. It turned out, being me was just fine.
 
