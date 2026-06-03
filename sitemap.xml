@@ -14,7 +14,15 @@
         <priority>1.0</priority>
     </url>
     
-    <!-- Blog Index -->
+    <!-- Projects -->
+    <url>
+        <loc>https://dhvogel.com/projects/</loc>
+        <lastmod>2026-06-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Essays Index -->
     <url>
         <loc>https://dhvogel.com/essays/</loc>
         <lastmod>2025-12-01</lastmod>

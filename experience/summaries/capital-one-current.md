@@ -1,1 +1,1 @@
-At Capital One, I'm building an AI-powered CD platform to automate aspects of software delivery, such as GitHub code reviews and Jenkins build pipeline diagnoses. The platform supports four different dev teams and has performed thousands of automated actions.
+At Capital One, I'm building an AI-powered CD platform to automate aspects of software delivery, such as GitHub code reviews and Jenkins build pipeline diagnoses. The platform supports twenty different dev teams.

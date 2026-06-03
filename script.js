@@ -116,7 +116,12 @@ async function loadProjects() {
     if (!projectsGrid) return;
     
     try {
-        const response = await fetch('projects.json');
+        let response = await fetch('projects.json');
+        
+        // If that fails, try one level up (e.g. on the /projects/ page)
+        if (!response.ok) {
+            response = await fetch('../projects.json');
+        }
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -318,7 +323,10 @@ async function loadBlogPreviews() {
             // Date
             const date = document.createElement('div');
             date.className = 'blog-date';
-            date.textContent = post.date;
+            const parsedDate = new Date(post.date);
+            date.textContent = isNaN(parsedDate.getTime())
+                ? post.date
+                : parsedDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
             dateContainer.appendChild(date);
             
             // Pinned indicator

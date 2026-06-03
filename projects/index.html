@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects built by Dan Vogel - software engineering projects and open-source work.">
+    <meta name="keywords" content="Dan Vogel, projects, portfolio, software engineer, open source, React, Go, Firebase, Cloud Run">
+    <meta name="author" content="Dan Vogel">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhvogel.com/projects/">
+    <meta property="og:title" content="Projects - Dan Vogel">
+    <meta property="og:description" content="A selection of projects I've built.">
+    <meta property="og:site_name" content="Dan Vogel">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dhvogel.com/projects/">
+    <meta name="twitter:title" content="Projects - Dan Vogel">
+    <meta name="twitter:description" content="A selection of projects I've built.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dhvogel.com/projects/">
+
+    <title>Projects - Dan Vogel</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHB7R2WKSF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PHB7R2WKSF');
+    </script>
+    <script>
+        // Apply dark mode immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Dan Vogel</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../essays/index.html">Essays</a></li>
+                <li><a href="../experience/index.html">Experience</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects" style="padding-top: 100px;">
+        <div class="container">
+            <h1 class="section-title">Projects</h1>
+            <p class="section-subtitle">A selection of projects I've built</p>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded from projects.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dan Vogel.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
