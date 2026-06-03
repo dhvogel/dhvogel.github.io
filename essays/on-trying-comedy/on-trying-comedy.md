@@ -16,12 +16,9 @@ Comedy helped me to develop this style of writing, as I was writing for the self
 
 Of course that’s not to say that everything should still be written by hand. There’s a time and a place for AI-writing: rote instructions, diagrams, communication with someone across the company you don't know that well, filling in forms. AI english is great for all of that. It checks the box.
 
-But to bring it back to comedy, I quit doing it because I felt that I would be happier not doing it anymore. It was a total grind, late nights, listening to a ton of bad jokes, weathering the sets that didn’t go well. It felt relieved, honestly, when I quit. But I did so knowing that I had tried something totally uncomfortable, and stuck with it for some time. And I could take those learnings and fold them into what’s next.  
+But to bring it back to comedy, I quit doing it because I felt that I would be happier not doing it anymore. It was a total grind, late nights, listening to a ton of bad jokes, weathering the sets that didn’t go well. I felt relieved, honestly, when I quit. But I did so knowing that I had tried something totally uncomfortable, and stuck with it for some time. And I could take those learnings and fold them into what’s next.  
 
 ---
 ## Acknowledgements
 
 *Thanks to Grant Hufham and David Kilroy for reading drafts of this.*
-
-
-I find that some people can have the tedency as adults to reconstruct the lives they had as a kid. I remember as a kid dinnertime was full of fun and laughter, so I think part of my motivation to do stand-up was to go where there was fun and laughter around dinnertime. 
