@@ -4,8 +4,6 @@ In 2023, every day for a year, I did open-mic stand-up comedy. I didn't end up b
 
 Comedy made me appreciate what it took to be a good comedian. Good comedians were the ones constantly coming up with new material. To them, open mics were a learning opportunity. They'd try a new idea, it would get a nibble from the crowd, and they'd tweak and add to and shuffle and tweak it, until it got the laughs they wanted and met their bar of quality, they'd add it to their set of "A" material, and finally, after weeks, let it rip at a weekend show and bring the house down. That's what people don't understand about comedy. It's really a highly choreographed performance, and the pros are pros because they can make it seem like they are making it up on the spot.
 
-Bad comedians, they had a much lower bar for quality and really just played the same hits every mic. It was like my God. We've heard this one three hundred times already. Just, brutal.
-
 Comedy gave me practice in public speaking. It helped me to learn how to be myself on stage. Or rather, to learn that being myself is *totally enough* on stage. I think a lot of my early mistakes in comedy were around trying to be someone who I thought the crowd would like. It turned out, being me was just fine.
 
 Through repetition, the crowd also helped me to figure out who I am. That’s the beautiful thing about comedy. I think a stand-up show is really a collaborative exercise between the crowd and the comedian, where the comedian is making the crowd laugh, and by laughing, the crowd is telling the comedian which parts of their act are truly authentic. Those were the jokes that got the best laughs. The jokes that only *that* comedian could make, because they were true and unique to *that* comedian.
