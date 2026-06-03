@@ -1,10 +1,10 @@
 # On Trying Comedy
 
-In 2023, every day for a year, I did open-mic stand-up comedy. I didn't end up becoming a professional comedian. But I did learn a thing or two.
+In 2023, every day for a year, I did open-mic stand-up comedy. I didn't end up becoming a professional comedian. But I did learn a couple things.
 
 Comedy made me appreciate what it took to be a good comedian. Good comedians were the ones constantly coming up with new material. To them, open mics were a learning opportunity. They'd try a new idea, it would get a nibble from the crowd, and they'd tweak and add to and shuffle and tweak it, and it would grow in quality until in finally, they'd let it rip at a weekend show and it would bring the house down. That's what people don't understand about comedy. It's really a highly choreographed performance, and the pros are pros because they can make it seem like they are making it up on the spot.
 
-Comedy gave me practice in public speaking. It helped me to learn how to be myself on stage. Or rather, to learn that being myself is *totally enough* on stage. I think a lot of my early mistakes in comedy were around trying to be someone who I thought the crowd would like. It turned out, being me was just fine.
+Comedy gave me practice in public speaking. It helped me to learn how to be myself on stage. Or rather, to learn that being myself is *totally enough* on stage. I think a lot of my early mistakes in comedy were around trying to be someone who I thought the crowd would like. It turned out, being me was fine.
 
 The crowd also helped me to figure out who I am. That’s the beautiful thing about comedy. I think a stand-up show is really a collaborative exercise between the crowd and the comedian, where the comedian is making the crowd laugh, and by laughing, the crowd is telling the comedian which parts of their act are truly authentic. Those were the jokes that got the best laughs. The jokes that only *that* comedian could tell, because they were true and unique to *that* comedian.
 
