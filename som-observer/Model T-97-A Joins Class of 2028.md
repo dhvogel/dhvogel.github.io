@@ -1,4 +1,4 @@
-Model T-97-A is not just any robot. In two years time, T-97-A will be a robot with a business school education. 
+Model T-97-A is not just any robot. In two years time, T-97-A will be a robot with a business school education.
 
 “We are thrilled to have T-97-A as a part of the class of 2028,” said Yale SOM Dean of Students Kevin Coughlan. “We think this is the future of business.”
 

@@ -168,6 +168,21 @@ a:hover {
     margin-bottom: 0.75rem;
 }
 
+.deck {
+    font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.45;
+}
+
+.article-header .deck {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
 /* Front page grid */
 .front-grid {
     display: grid;
@@ -180,6 +195,12 @@ a:hover {
     .front-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .lead-story h2 {
@@ -197,14 +218,6 @@ a:hover {
 
 .lead-story h2 a:hover {
     color: var(--yale-blue);
-}
-
-.lead-story .deck {
-    font-size: 1.05rem;
-    font-style: italic;
-    color: var(--ink-muted);
-    margin-bottom: 0.75rem;
-    line-height: 1.45;
 }
 
 .byline {
@@ -243,11 +256,15 @@ a:hover {
     letter-spacing: 0.05em;
 }
 
-/* Second story (below the fold) */
+/* Second story (below top story) */
 .second-story {
-    margin-top: 1.5rem;
+    margin-top: 0;
     padding-top: 1.5rem;
     border-top: 3px double var(--rule-dark);
+}
+
+.features-column .section-label {
+    margin-top: 2rem;
 }
 
 .second-story h2 {
@@ -267,28 +284,15 @@ a:hover {
     color: var(--yale-blue);
 }
 
-.second-story .deck {
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--ink-muted);
-    margin-bottom: 0.75rem;
-    line-height: 1.45;
-}
-
-.second-story-body {
-    columns: 3;
+.second-story .summary {
+    font-size: 0.95rem;
+    columns: 2;
     column-gap: 1.5rem;
     column-rule: 1px solid var(--rule);
-    font-size: 0.92rem;
-    margin-bottom: 0.5rem;
 }
 
-.second-story-body p {
-    margin-bottom: 0.85rem;
-}
-
-@media (max-width: 768px) {
-    .second-story-body {
+@media (max-width: 600px) {
+    .second-story .summary {
         columns: 1;
     }
 }
@@ -301,6 +305,11 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.second-story .byline {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 /* Sidebar */
@@ -433,14 +442,6 @@ a:hover {
     font-weight: 900;
     line-height: 1.15;
     margin-bottom: 0.75rem;
-}
-
-.article-header .deck {
-    font-size: 1.15rem;
-    font-style: italic;
-    color: var(--ink-muted);
-    line-height: 1.45;
-    margin-bottom: 1rem;
 }
 
 .article-header .byline {
