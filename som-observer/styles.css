@@ -243,6 +243,66 @@ a:hover {
     letter-spacing: 0.05em;
 }
 
+/* Second story (below the fold) */
+.second-story {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 3px double var(--rule-dark);
+}
+
+.second-story h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.second-story h2 a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.second-story h2 a:hover {
+    color: var(--yale-blue);
+}
+
+.second-story .deck {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--ink-muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.45;
+}
+
+.second-story-body {
+    columns: 3;
+    column-gap: 1.5rem;
+    column-rule: 1px solid var(--rule);
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+}
+
+.second-story-body p {
+    margin-bottom: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .second-story-body {
+        columns: 1;
+    }
+}
+
+.second-story .read-more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 /* Sidebar */
 .sidebar {
     border-left: 1px solid var(--rule);
