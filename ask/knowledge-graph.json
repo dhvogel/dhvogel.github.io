@@ -1,0 +1,203 @@
+{
+    "meta": {
+        "subject": "Dan Vogel",
+        "description": "A professional knowledge graph about Dan Vogel. Nodes are entities (person, jobs, education, projects, activities, essays, skills, locations) and edges are relationships between them. Used to ground answers to questions about Dan.",
+        "lastUpdated": "2026-06-07"
+    },
+    "nodes": [
+        {
+            "id": "dan",
+            "type": "person",
+            "label": "Dan Vogel",
+            "summary": "Dan Vogel is a Senior Software Engineer at Capital One in Richmond, VA, and a Yale School of Management MBA graduate. He previously worked at Google. He enjoys building software, writing, his book club, being outside, and playing guitar. He is always open to projects that help him grow as an engineer and as a person.",
+            "tags": ["dan vogel", "software engineer", "writer", "engineer"]
+        },
+        {
+            "id": "capital-one-senior",
+            "type": "job",
+            "label": "Senior Software Engineer, Capital One (Card Tech)",
+            "summary": "At Capital One (Jan 2026 - present, Card Tech), Dan is building an AI-powered CD (continuous delivery) platform to automate aspects of software delivery, such as GitHub code reviews and Jenkins build pipeline diagnoses. The platform supports twenty different dev teams.",
+            "tags": ["capital one", "ai", "continuous delivery", "ci/cd", "github", "jenkins", "platform", "senior software engineer", "card tech"],
+            "date": "2026"
+        },
+        {
+            "id": "yale",
+            "type": "education",
+            "label": "MBA, Yale School of Management",
+            "summary": "Dan earned an MBA at Yale School of Management (2023 - 2025). He described it as a once-in-a-lifetime opportunity that gave him his spark back after growing comfortable in the working world. At Yale he joined a GovTech startup in the Yale Accelerator, took several writing classes, and bikepacked solo across the United States over summer break.",
+            "tags": ["yale", "mba", "yale som", "school of management", "govtech", "accelerator", "writing", "education"],
+            "date": "2023-2025"
+        },
+        {
+            "id": "google-serverless",
+            "type": "job",
+            "label": "Software Engineer, Google Cloud Serverless",
+            "summary": "At Google Cloud (Oct 2019 - Mar 2023, Serverless team, San Francisco), Dan worked on serverless infrastructure including Serverless VPC Access Connectors. At Google he grew from a junior engineer who needed guidance into someone who could identify and scope engineering projects on his own and mentor more junior engineers.",
+            "tags": ["google", "google cloud", "serverless", "vpc access connectors", "san francisco", "software engineer", "cloud"],
+            "date": "2019-2023"
+        },
+        {
+            "id": "google-plus",
+            "type": "job",
+            "label": "Software Engineer, Google+",
+            "summary": "At Google (Oct 2018 - Oct 2019, Google+ team, Sunnyvale), Dan started on the Google+ team. He arrived for his first day of orientation excited to join Google+ when he learned via a news article that Google was shutting Google+ down.",
+            "tags": ["google", "google plus", "google+", "sunnyvale", "software engineer"],
+            "date": "2018-2019"
+        },
+        {
+            "id": "capital-one-early",
+            "type": "job",
+            "label": "Software Engineer, Capital One (early)",
+            "summary": "At Capital One (Jun 2016 - Aug 2018, Core Engineering then Capital One Labs, San Francisco), Dan experienced a large corporate environment for the first time. In his first year he evangelized an internal product, building marketing materials, speaking at conferences, and running workshops. In his second year he specialized in maintaining cloud infrastructure, where he realized the power of the cloud, which informed his goal to join Google Cloud.",
+            "tags": ["capital one", "capital one labs", "core engineering", "cloud", "san francisco", "software engineer"],
+            "date": "2016-2018"
+        },
+        {
+            "id": "bookclurb",
+            "type": "project",
+            "label": "BookClurb",
+            "summary": "BookClurb is an open-source platform for managing book clubs, built by Dan. It is built with React, Go, Firebase, and Cloud Run. Demo at bookclurb.net and source on GitHub at github.com/dhvogel/bookclurb.",
+            "tags": ["bookclurb", "project", "open source", "book club", "react", "go", "firebase", "cloud run"]
+        },
+        {
+            "id": "bikepacking",
+            "type": "activity",
+            "label": "Solo bikepacking across the United States",
+            "summary": "During summer break in business school, Dan bikepacked solo across the United States. He has written about how bicycling across the U.S. relates to software engineering.",
+            "tags": ["bikepacking", "cycling", "bicycle", "cross country", "outdoors", "adventure"]
+        },
+        {
+            "id": "comedy",
+            "type": "activity",
+            "label": "Stand-up comedy",
+            "summary": "In 2023, Dan did open-mic stand-up comedy every day for a year. He described it as a humbling time that taught him a few things.",
+            "tags": ["comedy", "stand-up", "standup", "open mic", "performing"],
+            "date": "2023"
+        },
+        {
+            "id": "book-club",
+            "type": "activity",
+            "label": "Book club",
+            "summary": "Outside of work Dan participates in his book club. His interest in book clubs also inspired his BookClurb project.",
+            "tags": ["book club", "reading", "books", "hobby"]
+        },
+        {
+            "id": "guitar",
+            "type": "activity",
+            "label": "Playing guitar",
+            "summary": "Dan enjoys playing the guitar in his free time.",
+            "tags": ["guitar", "music", "hobby"]
+        },
+        {
+            "id": "essay-comedy",
+            "type": "essay",
+            "label": "On Trying Comedy",
+            "summary": "Essay (May 2026): In 2023, every day for a year, Dan did open-mic stand-up comedy. It was a humbling time, but looking back it taught him a few things.",
+            "tags": ["essay", "comedy", "writing"]
+        },
+        {
+            "id": "essay-google-plus",
+            "type": "essay",
+            "label": "Sunsetting Google+",
+            "summary": "Essay (Nov 2025): Dan was at his first day of orientation at Google, excited to join the Google+ team, when his dad texted him a news article: 'Google Shutting Down Google+'.",
+            "tags": ["essay", "google plus", "google", "writing"]
+        },
+        {
+            "id": "essay-vpc",
+            "type": "essay",
+            "label": "Understanding GCP Serverless VPC Access",
+            "summary": "Essay (Dec 2025): When Dan joined the GCP Serverless engineering team in October 2019, he was assigned to a relatively small part of the system called Serverless VPC Access Connectors.",
+            "tags": ["essay", "google cloud", "serverless", "vpc", "writing", "technical"]
+        },
+        {
+            "id": "essay-bschool",
+            "type": "essay",
+            "label": "What going to business school did for me",
+            "summary": "Essay (Jan 2026): As Dan's first year at Yale SOM wound down, he knew he didn't want to be a consultant or a banker, and he felt alone, but he wasn't going to quit.",
+            "tags": ["essay", "yale", "business school", "mba", "writing"]
+        },
+        {
+            "id": "essay-bicycling",
+            "type": "essay",
+            "label": "What bicycling across the United States taught me about software engineering",
+            "summary": "Essay: Dan's thoughts on how bicycling across the U.S. relates to software engineering.",
+            "tags": ["essay", "bikepacking", "cycling", "software engineering", "writing"]
+        },
+        {
+            "id": "tech-go",
+            "type": "skill",
+            "label": "Go",
+            "summary": "Dan builds software in Go, including the backend of BookClurb.",
+            "tags": ["go", "golang", "programming language", "backend"]
+        },
+        {
+            "id": "tech-react",
+            "type": "skill",
+            "label": "React",
+            "summary": "Dan uses React for web front-ends, including BookClurb.",
+            "tags": ["react", "frontend", "javascript", "web"]
+        },
+        {
+            "id": "tech-cloud",
+            "type": "skill",
+            "label": "Cloud / Serverless",
+            "summary": "Dan has deep experience with cloud and serverless technologies, including Google Cloud, Cloud Run, Firebase, and serverless infrastructure.",
+            "tags": ["cloud", "serverless", "google cloud", "cloud run", "firebase", "infrastructure"]
+        },
+        {
+            "id": "loc-richmond",
+            "type": "location",
+            "label": "Richmond, VA",
+            "summary": "Dan currently lives and works in Richmond, Virginia.",
+            "tags": ["richmond", "virginia", "va"]
+        },
+        {
+            "id": "loc-sf",
+            "type": "location",
+            "label": "San Francisco, CA",
+            "summary": "Dan worked in San Francisco during his early Capital One years and his time at Google Cloud.",
+            "tags": ["san francisco", "california", "bay area"]
+        }
+    ],
+    "edges": [
+        { "source": "dan", "target": "capital-one-senior", "type": "works_at", "label": "currently works as Senior Software Engineer at" },
+        { "source": "dan", "target": "yale", "type": "studied_at", "label": "earned an MBA at" },
+        { "source": "dan", "target": "google-serverless", "type": "worked_at", "label": "worked at" },
+        { "source": "dan", "target": "google-plus", "type": "worked_at", "label": "worked at" },
+        { "source": "dan", "target": "capital-one-early", "type": "worked_at", "label": "previously worked at" },
+        { "source": "dan", "target": "bookclurb", "type": "built", "label": "built" },
+        { "source": "dan", "target": "bikepacking", "type": "did_activity", "label": "did" },
+        { "source": "dan", "target": "comedy", "type": "did_activity", "label": "did" },
+        { "source": "dan", "target": "book-club", "type": "did_activity", "label": "participates in" },
+        { "source": "dan", "target": "guitar", "type": "did_activity", "label": "plays" },
+        { "source": "dan", "target": "loc-richmond", "type": "lives_in", "label": "lives in" },
+
+        { "source": "dan", "target": "essay-comedy", "type": "wrote", "label": "wrote" },
+        { "source": "dan", "target": "essay-google-plus", "type": "wrote", "label": "wrote" },
+        { "source": "dan", "target": "essay-vpc", "type": "wrote", "label": "wrote" },
+        { "source": "dan", "target": "essay-bschool", "type": "wrote", "label": "wrote" },
+        { "source": "dan", "target": "essay-bicycling", "type": "wrote", "label": "wrote" },
+
+        { "source": "capital-one-early", "target": "google-serverless", "type": "led_to", "label": "inspired the move to" },
+        { "source": "google-plus", "target": "google-serverless", "type": "led_to", "label": "preceded" },
+        { "source": "yale", "target": "bikepacking", "type": "enabled", "label": "summer break enabled" },
+
+        { "source": "bookclurb", "target": "tech-react", "type": "uses_tech", "label": "is built with" },
+        { "source": "bookclurb", "target": "tech-go", "type": "uses_tech", "label": "is built with" },
+        { "source": "bookclurb", "target": "tech-cloud", "type": "uses_tech", "label": "is built with" },
+        { "source": "bookclurb", "target": "book-club", "type": "inspired_by", "label": "was inspired by" },
+
+        { "source": "capital-one-senior", "target": "tech-cloud", "type": "uses_tech", "label": "involves" },
+        { "source": "google-serverless", "target": "tech-cloud", "type": "uses_tech", "label": "involves" },
+        { "source": "capital-one-early", "target": "tech-cloud", "type": "uses_tech", "label": "involves" },
+
+        { "source": "google-serverless", "target": "loc-sf", "type": "located_in", "label": "was based in" },
+        { "source": "capital-one-early", "target": "loc-sf", "type": "located_in", "label": "was based in" },
+
+        { "source": "essay-comedy", "target": "comedy", "type": "about", "label": "is about" },
+        { "source": "essay-google-plus", "target": "google-plus", "type": "about", "label": "is about" },
+        { "source": "essay-vpc", "target": "google-serverless", "type": "about", "label": "is about" },
+        { "source": "essay-bschool", "target": "yale", "type": "about", "label": "is about" },
+        { "source": "essay-bicycling", "target": "bikepacking", "type": "about", "label": "is about" }
+    ]
+}

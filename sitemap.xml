@@ -29,6 +29,14 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Ask -->
+    <url>
+        <loc>https://dhvogel.com/ask/</loc>
+        <lastmod>2026-06-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
     <!-- Blog Posts (published only) -->
         

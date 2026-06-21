@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ask questions about Dan Vogel - a personal knowledge graph answered by an AI model that runs entirely in your browser. No servers, no cost.">
+    <meta name="keywords" content="Dan Vogel, ask, AI, knowledge graph, WebLLM, browser AI, software engineer">
+    <meta name="author" content="Dan Vogel">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhvogel.com/ask/">
+    <meta property="og:title" content="Ask about Dan - Dan Vogel">
+    <meta property="og:description" content="Ask questions about Dan Vogel, answered by an AI that runs entirely in your browser.">
+    <meta property="og:site_name" content="Dan Vogel">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dhvogel.com/ask/">
+    <meta name="twitter:title" content="Ask about Dan - Dan Vogel">
+    <meta name="twitter:description" content="Ask questions about Dan Vogel, answered by an AI that runs entirely in your browser.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dhvogel.com/ask/">
+
+    <title>Ask about Dan - Dan Vogel</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHB7R2WKSF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PHB7R2WKSF');
+    </script>
+    <script>
+        // Apply dark mode immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Dan Vogel</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../essays/index.html">Essays</a></li>
+                <li><a href="../experience/index.html">Experience</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="index.html">Ask</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Ask Section -->
+    <section class="ask-page" style="padding-top: 100px;">
+        <div class="container" style="max-width: 760px;">
+            <h1 class="section-title" style="text-align: left; margin-bottom: 0.75rem;">Ask about Dan</h1>
+            <p class="section-subtitle">
+                A small AI model answers questions about Dan using a knowledge graph of his work, projects, and writing.
+                The model runs <strong>entirely in your browser</strong> &mdash; nothing is sent to a server.
+            </p>
+
+            <!-- Start panel -->
+            <div id="ask-start" class="ask-start">
+                <p class="ask-start-note">
+                    Starting downloads a one-time <strong>~0.9&nbsp;GB</strong> AI model to your browser, which then runs
+                    locally and is cached for next time. <strong>Nothing downloads until you choose to start</strong>, so
+                    visiting this site never uses your data on its own. A device with WebGPU support is required.
+                </p>
+                <p id="ask-start-warning" class="ask-start-warning" style="display:none;"></p>
+                <button id="ask-start-btn" class="btn btn-primary ask-start-btn" type="button">Download model (~0.9 GB) &amp; start</button>
+            </div>
+
+            <!-- Unsupported fallback -->
+            <div id="ask-unsupported" class="ask-unsupported" style="display:none;">
+                <p>
+                    Your browser doesn't support <strong>WebGPU</strong>, which this in-browser AI needs.
+                    Try the latest Chrome, Edge, or a Chromium-based browser on desktop.
+                    In the meantime, you can learn about Dan on the
+                    <a href="../experience/index.html">Experience</a>,
+                    <a href="../projects/index.html">Projects</a>, and
+                    <a href="../essays/index.html">Essays</a> pages.
+                </p>
+            </div>
+
+            <!-- Chat panel -->
+            <div id="ask-chat" class="ask-chat" style="display:none;">
+                <div id="ask-messages" class="ask-messages" aria-live="polite"></div>
+                <div id="ask-status" class="ask-status" style="display:none;"></div>
+
+                <div class="ask-examples">
+                    <button type="button" class="ask-chip" data-example="What does Dan do at Capital One?">What does Dan do at Capital One?</button>
+                    <button type="button" class="ask-chip" data-example="What projects has Dan built?">What has Dan built?</button>
+                    <button type="button" class="ask-chip" data-example="What did Dan do at Google?">What did Dan do at Google?</button>
+                    <button type="button" class="ask-chip" data-example="What does Dan do outside of work?">Outside of work?</button>
+                </div>
+
+                <div class="ask-input-row">
+                    <textarea id="ask-input" class="ask-input" rows="1" placeholder="Ask a question about Dan…"></textarea>
+                    <button id="ask-send" class="btn btn-primary ask-send-btn" type="button" disabled>Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dan Vogel.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script type="module" src="ask.js"></script>
+</body>
+</html>
